@@ -4,7 +4,7 @@
 
 ### Objective
 
-Create a personal portfolio website that highlights your skills, education, and projects. The website should be developed using HTML and CSS, with additional interactive functionality introduced through JavaScript.
+Create a portfolio website that highlights your skills and education. The website should be developed using HTML and CSS, with additional interactive functionality through JavaScript.
 
 ### Requirements
 
@@ -26,7 +26,7 @@ Your portfolio must include the following sections:
 
 - Navbar Scroll Challenge: Implement a responsive navigation bar that changes its appearance or behavior when the user scrolls down the page.
 
-- JavaScript Functionality Challenge: Add at least one interactive feature using JavaScript (e.g., animations, form validation, dynamic content).
+- JavaScript Functionality Challenge: Add at least one interactive feature using JavaScript.
 
 #### Technologies
 
