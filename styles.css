@@ -1,38 +1,143 @@
+:root {
+    /** CSS DARK THEME PRIMARY COLORS */  
+    --color-primary-100:  #382bf0;
+    --color-primary-200:  #5e43f3;
+    --color-primary-300:  #7a5af5;
+    --color-primary-400:  #9171f8;
+    --color-primary-500:  #a688fa;
+    --color-primary-600:  #ba9ffb;  
+    /** CSS DARK THEME SURFACE COLORS */ 
+    --color-surface-100:  #121212;
+    --color-surface-200:  #282828;
+    --color-surface-300:  #3f3f3f;
+    --color-surface-400:  #575757;
+    --color-surface-500:  #717171;
+    --color-surface-600:  #8b8b8b;  
+    /** CSS DARK THEME MIXED SURFACE COLORS */ 
+    --color-surface-mixed-100:  #1a1625;
+    --color-surface-mixed-200:  #2f2b3a;
+    --color-surface-mixed-300:  #46424f;
+    --color-surface-mixed-400:  #5e5a66;
+    --color-surface-mixed-500:  #76737e;
+    --color-surface-mixed-600:  #908d96;
+    
+    --Background: var(--color-surface-100);
+    --Accent-color: var(--color-primary-500);
+    --Cards: var(--color-surface-200)
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container > div {
+    flex: 1; /* Make each column take equal width */
+    margin: 0 60px; /* Horizontal margin between columns */
+    /* Optional: add padding for better visual separation */
+    border-radius: 5px; /* Optional: Rounded corners for the columns */
+}
+
+.container > div:first-child {
+    margin-left: 0; /* No left margin for the first column */
+}
+
+.container > div:last-child {
+    margin-right: 0; /* No right margin for the last column */
+}
+
 header {
+    position: sticky;
+    top: 0;
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 5px;
 }
 
 nav ul {
     list-style: none;
+    padding: 0; /* Remove padding */
+    margin: 0;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+/* Separator styling 
+.separator {
+    margin-left: 20px;
+    color: #000;
+}*/
+
+.separator {
+    margin-left: 20px;
+    height: 30px;
+    width: 1px;
+    background-color: #d1d5db;
+}
+
+/* Button styling */
+button {
+    border: none;
+    border-radius: 10px;
+    color: rgb(140, 218, 249);
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
 }
 
 nav a {
-    color: white;
+    display: block;
     text-decoration: none;
-    font-size: 18px;
+    color: #d5d5d5;
+    text-align: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    
+}
+nav a:hover {
+    color:rgb(255, 255, 255);
+}
+nav a:focus-within {
+    color:rgb(255, 255, 255);
 }
 
-section {
-    padding: 50px;
+nav ul li:not(:first-child){
+    margin-left: 20px;
+}
+
+div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1, h2 {
     text-align: center;
 }
 
-#landing {
-    height: 100vh;
+#landing, #education, #contact {
     background-color: #f4f4f4;
+    /*text-align: left;*/
 }
 
-#about, #education, #skills, #contact {
+#about, #skills {
     background-color: #ddd;
-    margin: 20px 0;
+    /*text-align: right;*/
+
+}
+
+.content {
+    max-width: 1200px; /* Adjust based on your preference */
+    margin: 0 auto;
+    padding: 10px;
 }
