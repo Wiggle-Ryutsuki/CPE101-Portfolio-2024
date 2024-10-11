@@ -1,9 +1,9 @@
 :root {
     /** CSS DARK THEME PRIMARY COLORS */  
-    --color-primary-100:  #382bf0;
-    --color-primary-200:  #5e43f3;
+    --color-primary-100:  #ffffff;
+    --color-primary-200:  #f6f6f6;
     --color-primary-300:  #7a5af5;
-    --color-primary-400:  #9171f8;
+    --color-primary-400:  #ffffff;
     --color-primary-500:  #a688fa;
     --color-primary-600:  #ba9ffb;  
     /** CSS DARK THEME SURFACE COLORS */ 
@@ -21,27 +21,45 @@
     --color-surface-mixed-500:  #76737e;
     --color-surface-mixed-600:  #908d96;
     
-    --Background: var(--color-surface-100);
+    --Background: var(--color-primary-100);
+    --Background-second: var(--color-primary-200);
     --Accent-color: var(--color-primary-500);
-    --Cards: var(--color-surface-200)
+    --Text-color: var(var(--color-surface-100));
+    --Header-Text-color: var(--color-surface-400);
+    --Header-Text-color-hover: var(--color-surface-100);
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--Background);
+    color: var(--Text-color);
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 .container {
     display: flex;
     justify-content: space-between;
+
 }
 
 .container > div {
     flex: 1; /* Make each column take equal width */
-    margin: 0 60px; /* Horizontal margin between columns */
-    /* Optional: add padding for better visual separation */
-    border-radius: 5px; /* Optional: Rounded corners for the columns */
+    margin: 0 60px;
 }
 
 .container > div:first-child {
@@ -52,17 +70,35 @@ body {
     margin-right: 0; /* No right margin for the last column */
 }
 
+.content {
+    max-width: 1200px; /* Adjust based on your preference */
+    margin: 0 auto;
+    padding: 10px;
+}
+
 header {
     position: sticky;
     top: 0;
-    background-color: #333;
-    color: white;
+    background-color: var(--Background);
+    
     padding: 5px;
+}
+
+header.scrolled {
+    background-color: transparent; /* Change to transparent background on scroll */
+    border-bottom-color: rgba(0, 0, 0, 0.5); /* Darker bottom border when scrolled */
+}
+
+.separator {
+    height: 24px; 
+    width: 1px;
+    background-color: #d1d5db;
+    margin-left: 20px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0; /* Remove padding */
+    padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
@@ -73,20 +109,6 @@ nav ul li:first-child {
     margin-right: auto;
 }
 
-/* Separator styling 
-.separator {
-    margin-left: 20px;
-    color: #000;
-}*/
-
-.separator {
-    margin-left: 20px;
-    height: 30px;
-    width: 1px;
-    background-color: #d1d5db;
-}
-
-/* Button styling */
 button {
     border: none;
     border-radius: 10px;
@@ -99,45 +121,35 @@ button {
 nav a {
     display: block;
     text-decoration: none;
-    color: #d5d5d5;
+    color: var(--Header-Text-color);
     text-align: center;
     align-items: center;
     transition: 0.2s ease-in-out;
     
 }
 nav a:hover {
-    color:rgb(255, 255, 255);
+    color: var(--Header-Text-color-hover);
 }
 nav a:focus-within {
-    color:rgb(255, 255, 255);
+    color: var(--Header-Text-color-hover);
 }
 
 nav ul li:not(:first-child){
     margin-left: 20px;
 }
 
-div {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-h1, h2 {
-    text-align: center;
-}
-
 #landing, #education, #contact {
-    background-color: #f4f4f4;
-    /*text-align: left;*/
+    text-align: left;
 }
 
 #about, #skills {
-    background-color: #ddd;
-    /*text-align: right;*/
+    background-color: var(--Background-second); 
+    text-align: right;
 
 }
 
-.content {
-    max-width: 1200px; /* Adjust based on your preference */
-    margin: 0 auto;
-    padding: 10px;
+img {
+    width: 500px;
+    height: auto;
+    float: right;
 }
