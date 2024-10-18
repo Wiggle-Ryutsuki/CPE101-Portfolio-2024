@@ -4,7 +4,7 @@
 
 ### Objective
 
-Create a personal portfolio website that highlights your skills, education, and projects. The website should be developed using HTML and CSS, with additional interactive functionality introduced through JavaScript.
+Create a personal portfolio website that highlights yourself, your skills, and education. The website should be developed using HTML and CSS, with additional interactive functionality introduced through JavaScript.
 
 ### Requirements
 
