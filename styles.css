@@ -84,14 +84,13 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--Background);
-    
+    z-index: 5;
     padding: 5px;
 }
 
 header.scrolled {
     background-color: var(--Background);
     border-bottom-color: rgba(0, 0, 0, 0.5); /* Darker bottom border when scrolled */
-    z-index: 1000;
 }
 
 .separator {
