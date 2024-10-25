@@ -29,7 +29,7 @@
     --Header-Text-color-hover: var(--color-surface-100);
 }
 
-/*Over all webpage*/
+/* Overall webpage */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -49,18 +49,18 @@ h1 {
 div {
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .container > div {
     flex: 1; /* Make each column take equal width */
     margin: 0 60px;
+    min-width: 250px; /* Set a minimum width for responsiveness */
 }
 
 .container > div:first-child {
@@ -77,13 +77,11 @@ div {
     padding: 10px;
 }
 
-/*  */
-
+/* Header */
 header {
     position: sticky;
     top: 0;
     background-color: var(--Background);
-    
     padding: 5px;
 }
 
@@ -128,16 +126,17 @@ nav a {
     text-align: center;
     align-items: center;
     transition: 0.2s ease-in-out;
-    
 }
+
 nav a:hover {
     color: var(--Header-Text-color-hover);
 }
+
 nav a:focus-within {
     color: var(--Header-Text-color-hover);
 }
 
-nav ul li:not(:first-child){
+nav ul li:not(:first-child) {
     margin-left: 20px;
 }
 
@@ -148,16 +147,54 @@ nav ul li:not(:first-child){
 #about, #skills {
     background-color: var(--Background-second); 
     text-align: right;
-
 }
 
+/* Responsive image */
 img {
-    width: 500px;
+    width: 100%; /* Make images responsive */
+    max-width: 500px; /* Keep a max width */
     height: auto;
     float: right;
 }
 
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
 
+    .container > div {
+        margin: 0 20px; /* Reduce margin for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items on small screens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space out stacked navigation items */
+    }
+
+    /* Adjust layout for specific sections */
+    #about, #skills {
+        text-align: left; /* Change text alignment for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px; /* Further reduce font size for very small screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack container items on very small screens */
+    }
+
+    img {
+        float: none; /* Remove float for images */
+        margin: 0 auto; /* Center images */
+    }
+}
 
 
 /* Container styling */
