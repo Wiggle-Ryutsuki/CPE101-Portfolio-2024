@@ -47,6 +47,7 @@ body {
 
 .titles {
     text-align: center;
+    background-color: var(--Accent-color);
 }
 
 h1 {
