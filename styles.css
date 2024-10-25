@@ -278,8 +278,9 @@ img {
 
 .myBar {
     width: 1%;
-    height: 50%;
-
+    height: 100%;
+    border-top-right-radius: 10px; /* Adjust value for desired roundness */
+    border-bottom-right-radius: 10px;
     background-color: var(--Accent-color);
 }
 
