@@ -46,8 +46,11 @@ body {
 }
 
 .titles {
+    display: inline-block; /* Wraps the div closely around the text */
     text-align: center;
     background-color: var(--Accent-color);
+    padding: 3.5px 5px; /* Adjust padding to control the spacing around the text */
+    border-radius: 10px; /* Optional: Adds rounded corners */
 }
 
 h1 {
