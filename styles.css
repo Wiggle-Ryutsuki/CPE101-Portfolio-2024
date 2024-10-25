@@ -40,6 +40,14 @@ body {
     cursor: default;
 }
 
+.arima-body {
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+
 .titles {
     text-align: center;
 }
