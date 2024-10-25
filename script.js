@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let skillAnimated = false;
     skillProgress();
     function skillProgress(){
+        const bars = document.querySelectorAll('.myProgress');
+        
         if (skillAnimated) {
             return; 
         }
