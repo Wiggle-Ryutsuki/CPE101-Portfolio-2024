@@ -25,12 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('scroll', () => {
-        const skillSection = document.getElementById("skills");
-        const sectionPosition = skillSection.getBoundingClientRect().top; // Get position relative to the viewport
-    
-        if (sectionPosition < window.innerHeight && sectionPosition >= 0) {
-            skillProgress(); // Call the animation function when section is in view
-            window.removeEventListener('scroll', arguments.callee); // Remove event listener after first scroll
+        const skillsSection = document.getElementById('skills');
+        const sectionTop = skillsSection.getBoundingClientRect().top; // Get the position of the section
+
+        // Check if the section is in view and if it hasn't been scrolled into yet
+        if (sectionTop < window.innerHeight && !hasScrolled) {
+            hasScrolled = true; // Set the variable to true so the animation doesn't run again
+            skillProgress(); // Call the function to start the progress
         }
     });
 
