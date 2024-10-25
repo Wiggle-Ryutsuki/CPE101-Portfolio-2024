@@ -32,7 +32,12 @@
 
 /*Over all webpage*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+
+
     margin: 0;
     padding: 0;
     background-color: var(--Background);
@@ -40,20 +45,17 @@ body {
     cursor: default;
 }
 
-.arima-body {
-    font-family: "Arima", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-  
-
 .titles {
     text-align: center;
 }
 
 h1 {
     font-size: 45px;
+
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
 }
 
 div {
