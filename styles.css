@@ -89,7 +89,7 @@ header {
 }
 
 header.scrolled {
-    background-color: transparent; /* Change to transparent background on scroll */
+    background-color: var(--Background);
     border-bottom-color: rgba(0, 0, 0, 0.5); /* Darker bottom border when scrolled */
 }
 
