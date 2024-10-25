@@ -265,12 +265,15 @@ img {
     width: 100%;
     background-color: #ddd;
     border-radius: 50px;
+    overflow: hidden;
     height: 1px;
+    margin: 5px 0;
 }
 
 .myBar {
     width: 1%;
+    height: 100%;
     height: 1px;
     background-color: #04AA6D;
-    border-radius: 50px;
+    transition: width 0.5s;
 }
