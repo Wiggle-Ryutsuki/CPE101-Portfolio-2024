@@ -77,7 +77,7 @@ div {
     padding: 10px;
 }
 
-/*  */
+/* Navbar */
 
 header {
     position: sticky;
@@ -141,6 +141,7 @@ nav ul li:not(:first-child){
     margin-left: 20px;
 }
 
+/* Pages */
 #landing, #contact {
     text-align: left;
 }
@@ -158,11 +159,7 @@ img {
 }
 
 
-
-
-/* Container styling */
-/* Education container styling */
-/* Container for the timeline in the education section */
+/* Education Section*/
 #education {
     width: 100%;
     padding: 40px 0;
@@ -261,3 +258,6 @@ img {
         left: 40px;
     }
 }
+
+
+/* Skills Section */
