@@ -278,3 +278,7 @@ img {
     background-color: #04AA6D;
     transition: width 0.5s;
 }
+
+#skills p{
+    text-align: center;
+}
