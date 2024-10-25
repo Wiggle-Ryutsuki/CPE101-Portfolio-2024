@@ -37,6 +37,7 @@ body {
     padding: 0;
     background-color: var(--Background);
     color: var(--Text-color);
+    cursor: default;
 }
 
 h2 {
