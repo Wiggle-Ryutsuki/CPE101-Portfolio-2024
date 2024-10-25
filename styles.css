@@ -92,7 +92,7 @@ header {
 header.scrolled {
     background-color: var(--Background);
     border-bottom: 1px solid rgba(197, 197, 197, 0.5); /* Define the border style */
-    box-shadow: 0 5px 10px var(--Accent-color-sec); /* Add shadow effect *//* Darker bottom border when scrolled */
+    box-shadow: 0 10px 15px var(--color-surface-mixed-500); /* Add shadow effect *//* Darker bottom border when scrolled */
 }
 
 .separator {
