@@ -46,7 +46,6 @@ body {
 }
 
 .titles {
-    display: inline-block; /* Wraps around the text closely */
     text-align: center;
     background-color: var(--Accent-color); /* Light gray background color */
     padding: 2px 2px; /* Adjust padding for more space around the text */
