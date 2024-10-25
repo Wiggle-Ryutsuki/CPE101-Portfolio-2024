@@ -264,10 +264,11 @@ img {
 .myProgress {
     width: 100%;
     background-color: #ddd;
+    
 }
 
 .myBar {
     width: 1%;
-    height: 30px;
+    height: 1px;
     background-color: #04AA6D;
 }
