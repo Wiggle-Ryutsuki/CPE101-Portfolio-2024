@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     let hasScrolled = false; // Boolean variable to track if the section has been scrolled into view
-    const animationDuration = 2000; // Duration in milliseconds for the animation
+    const animationDuration = 1000; // Duration in milliseconds for the animation
     
     function skillProgress() {
         // Select all progress bars
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let currentWidth = 0; // Start from 0%
             
             // Calculate the interval speed based on desired duration
-            const intervalTime = 15; // Update interval in milliseconds
+            const intervalTime = 10; // Update interval in milliseconds
             const increment = percentage / (animationDuration / intervalTime); // Calculate the increment
     
             // Create an interval to animate the progress
