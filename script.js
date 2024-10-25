@@ -24,26 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
         
     });
 
-    window.addEventListener('scroll', () => {
-        const skillsSection = document.getElementById('skills');
-        const sectionTop = skillsSection.getBoundingClientRect().top; // Get the position of the section
-
-        // Check if the section is in view and if it hasn't been scrolled into yet
-        if (sectionTop < window.innerHeight && !hasScrolled) {
-            hasScrolled = true; // Set the variable to true so the animation doesn't run again
-            skillProgress(); // Call the function to start the progress
-        }
-    });
-
-
-    skillProgress();
-    function skillProgress(){
+    function skillProgress() {
+        const skillSection = document.getElementById("skills"); // Adjust this to your section ID
         const bars = document.querySelectorAll('.myProgress');
-
+    
+        // Check if the progress has already been animated
         if (localStorage.getItem('skillsAnimated')) {
             return; // Exit if already animated
         }
-
+    
+        // Function to animate each progress bar
         bars.forEach(bar => {
             const percentage = bar.getAttribute('data-percentage'); // Get target percentage
             const myBar = bar.querySelector('.myBar'); // Get the inner bar
@@ -58,9 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }, 20); // Adjust speed as needed
         });
-
-            // Mark as animated in local storage
+    
+        // Mark as animated in local storage
         localStorage.setItem('skillsAnimated', 'true');
     }
+    localStorage.setItem('skillsAnimated', 'true');
+    // Event listener for scrolling
+    window.addEventListener('scroll', () => {
+        const skillSection = document.getElementById("skills");
+        const sectionPosition = skillSection.getBoundingClientRect().top; // Get position relative to the viewport
+    
+        if (sectionPosition < window.innerHeight && sectionPosition >= 0) {
+            skillProgress(); // Call the animation function when section is in view
+            window.removeEventListener('scroll', arguments.callee); // Remove event listener after first scroll
+        }
+    });
+    
     
 });
