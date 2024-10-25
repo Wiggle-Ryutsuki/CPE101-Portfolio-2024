@@ -32,9 +32,9 @@
 
 /*Over all webpage*/
 body {
-    font-family: "Arima", system-ui;
+    font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 150;
+    font-weight: 200;
     font-style: normal;
 
 
@@ -52,9 +52,9 @@ body {
 h1 {
     font-size: 45px;
 
-    font-family: "Arima", system-ui;
+    font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 150;
+    font-weight: 200;
     font-style: normal;
 }
 
