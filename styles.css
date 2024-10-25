@@ -260,6 +260,14 @@ img {
 
 
 /* Skills Section */
+.skill-effect{
+    border-radius: 50px;
+    height: 15px;
+    background-color: #c7c7c7;
+    padding: 0px;
+    margin: 0;
+}
+
 .myProgress {
     width: 100%;
     background-color: #ddd;
@@ -276,14 +284,6 @@ img {
     height: 10px;
     background-color: #04AA6D;
     transition: width 0.5s;
-}
-
-.skill-effect{
-    border-radius: 50px;
-    height: 15px;
-    background-color: #c7c7c7;
-    padding: 0px;
-    margin: 0;
 }
 
 .descript{
