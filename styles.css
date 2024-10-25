@@ -182,7 +182,6 @@ img {
     height: 100%;
     background-color: #ddd;
     transform: translateX(-50%);
-    z-index: 1;
   }
   
   /* Container for timeline items */
