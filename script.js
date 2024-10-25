@@ -21,6 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.classList.remove('scrolled');
         }
+
+        const skillSection = document.getElementById("skills");
+        const sectionPosition = skillSection.getBoundingClientRect().top; // Get position relative to the viewport
+    
+        if (sectionPosition < window.innerHeight && sectionPosition >= 0) {
+            skillProgress(); // Call the animation function when section is in view
+            window.removeEventListener('scroll', arguments.callee); // Remove event listener after first scroll
+        }
     });
 
     let skillAnimated = false;
