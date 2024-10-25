@@ -27,10 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
     skillProgress();
     function skillProgress(){
         const bars = document.querySelectorAll('.myProgress');
-        
+
         if (skillAnimated) {
             return; 
         }
+
+        bars.forEach(bar => {
+            const percentage = bar.getAttribute('data-percentage'); // Get target percentage
+            const myBar = bar.querySelector('.myBar'); // Get the inner bar
+    
+            let width = 0; // Start width
+            const interval = setInterval(() => {
+                if (width >= percentage) {
+                    clearInterval(interval); // Stop when the target is reached
+                } else {
+                    width++;
+                    myBar.style.width = width + '%'; // Update the width
+                }
+            }, 20); // Adjust speed as needed
+        });
+
+        skillAnimated = true;
     }
     
 });
