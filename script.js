@@ -23,9 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    let skillAnimated = false;
     skillProgress();
     function skillProgress(){
-
+        if (skillAnimated) {
+            return; 
+        }
     }
     
 });
