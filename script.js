@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    let skillAnimated = false;
+
     skillProgress();
     function skillProgress(){
         const bars = document.querySelectorAll('.myProgress');
 
-        if (skillAnimated) {
-            return; 
+        if (localStorage.getItem('skillsAnimated')) {
+            return; // Exit if already animated
         }
 
         bars.forEach(bar => {
@@ -59,7 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 20); // Adjust speed as needed
         });
 
-        skillAnimated = true;
+            // Mark as animated in local storage
+        localStorage.setItem('skillsAnimated', 'true');
     }
     
 });
