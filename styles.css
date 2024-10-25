@@ -279,6 +279,6 @@ img {
     transition: width 0.5s;
 }
 
-#skills p{
+.descript{
     text-align: center;
 }
