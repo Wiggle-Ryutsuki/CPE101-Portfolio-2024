@@ -21,7 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.classList.remove('scrolled');
         }
+        
+    });
 
+    window.addEventListener('scroll', () => {
         const skillSection = document.getElementById("skills");
         const sectionPosition = skillSection.getBoundingClientRect().top; // Get position relative to the viewport
     
