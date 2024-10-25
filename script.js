@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let currentWidth = 0; // Start from 0%
             
             // Calculate the interval speed based on desired duration
-            const intervalTime = 10; // Update interval in milliseconds
+            const intervalTime = 5; // Update interval in milliseconds
             const increment = percentage / (animationDuration / intervalTime); // Calculate the increment
     
             // Create an interval to animate the progress
