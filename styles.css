@@ -381,9 +381,18 @@ img {
 
 /* Contact styles*/
 
-.contact .container{
-    display: flex;
-    padding: 10px;
+.contact .container {
+    display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Distributes space evenly between items */
+    align-items: center; /* Centers items vertically */
+    padding: 10px; /* Optional: Adds some padding */
+}
+
+/* Optional: Adjust the width of child elements to ensure they align well */
+.contact .container > div { /* Assuming each contact item is wrapped in a div */
+    flex: 1; /* Each item takes up equal space */
+    min-width: 200px; /* Optional: Set a minimum width for items */
+    margin: 10px; /* Optional: Add margin around items for spacing */
 }
 
 .wrap-icons {
@@ -488,17 +497,17 @@ li {
 }
 
 .tooltip {
-    visibility: hidden;
-    opacity: 0;
-    background-color: #333;
-    color: #fff;
+    visibility: visible;
+    opacity: 1;
+    background-color: var(--Accent-color-light-sec);
+    color: var(--Background-light);
     text-align: center;
-    padding: 5px 10px;
+    padding: 5px 6px;
     border-radius: 4px;
     position: absolute;
-    top: -30px;
+    top: -10px;
     right: 0;
-    font-size: 12px;
+    font-size: 11px;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
