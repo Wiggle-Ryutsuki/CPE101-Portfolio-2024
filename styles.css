@@ -437,8 +437,8 @@ ul {
 
 /* Style for list items */
 li {
-    margin: 5px 0;/* Remove margin from list items */
-    padding: 5px 0; /* Adjust padding for space between items */
+    margin: 0;/* Remove margin from list items */
+    padding: 0; /* Adjust padding for space between items */
 }
 
 
