@@ -296,6 +296,28 @@ img {
     z-index: 1;
 }
 
+/* Center the circle for left containers */
+.left::after {
+    left: calc(100% - 3px); /* Positions it at the edge */
+    transform: translateX(0);
+}
+
+/* Center the circle for right containers */
+.right::after {
+    left: -3px; /* Aligns it to the left edge for the right container */
+    transform: translateX(0);
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
 /* Container for timeline items */
 .timeline .container-left,
 .timeline .container-right {
