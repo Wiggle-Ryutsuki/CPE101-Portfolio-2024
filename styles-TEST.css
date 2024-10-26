@@ -214,31 +214,32 @@ div {
   }
   
 /* Add arrows to the left container (pointing right) */
+/* Arrow for the left container */
 .left::before {
     content: '';
-    height: 0;
     position: absolute;
-    top: 20px; /* Adjust this value to align with your circles */
+    top: 20px; /* Adjust based on your design */
+    right: 100%; /* Position to the left of the container */
     width: 0;
-    z-index: 1; /* Ensure it's above other content */
-    right: 1px; /* Position it just outside the left timeline content */
-    border: 10px solid transparent; /* Use transparent border for consistent size */
-    border-right-color: white; /* Change to match your container color */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);/* Add shadow */
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid #FF9F55; /* Color of the arrow */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for the arrow */
 }
 
-/* Add arrows to the right container (pointing left) */
+/* Arrow for the right container */
 .right::before {
     content: '';
-    height: 0;
     position: absolute;
-    top: 20px; /* Adjust this value to align with your circles */
+    top: 20px; /* Adjust based on your design */
+    left: 100%; /* Position to the right of the container */
     width: 0;
-    z-index: 1; /* Ensure it's above other content */
-    left: 1px; /* Position it just outside the right timeline content */
-    border: 10px solid transparent; /* Use transparent border for consistent size */
-    border-left-color: white; /* Change to match your container color */
-    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #FF9F55; /* Color of the arrow */
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
 }
   
   /* Fix the circle for containers on the right side */
