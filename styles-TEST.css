@@ -177,6 +177,15 @@ div {
     background-color: inherit;
     width: 50%;
   }
+
+/* Container for timeline items */
+.timeline .timeline-container.left,
+.timeline .timeline-container.right {
+    position: relative;
+    width: 50%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
   
   /* The circles on the timeline */
   .timeline-container::after {
@@ -236,9 +245,12 @@ div {
   }
 
   /* The actual content */
+
+
 .timeline-content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
+    padding: 20px;
     border-radius: 6px;
+    box-shadow: 0 2px 4px var(--Header-text-light-hover);
+    position: relative;
+    z-index: 2;
   }
