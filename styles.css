@@ -94,8 +94,17 @@ a{
     color: inherit; /* Inherit color from parent element */
 }
 
-li{
-    
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    margin-left: 30px;
+}
+
+/* Style for list items */
+li {
+    margin: 0; /* Remove margin from list items */
+    padding: 5px 0; /* Adjust padding for space between items */
 }
 
 .wrapper-container {
