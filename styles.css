@@ -406,10 +406,14 @@ img {
 }
 
 .wrap-icon-email svg {
-    flex-shrink: 0; /* Prevents the icon from resizing */
     cursor: pointer; /* Optional: changes cursor to pointer on hover */
     color: var(--Text-light);
     margin-left: 10px;
+    transition: 0.3s;
+}
+
+.wrap-icon-email svg:hover{
+    color: var(--Accent-color-light)
 }
 
 a{
