@@ -381,6 +381,11 @@ img {
 
 /* Contact styles*/
 
+.contact .container{
+    display: flex;
+    padding: 10px;
+}
+
 .wrap-icons {
     display: flex; /* Aligns children (icon and text) in a row */
     align-items: center; /* Centers them vertically */
