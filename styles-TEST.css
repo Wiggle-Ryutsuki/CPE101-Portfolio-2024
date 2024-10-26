@@ -213,6 +213,13 @@ div {
     left: 50%;
   }
   
+  .triangle-container-left, .triangle-container-right {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
 /* Add arrows to the left container (pointing right) */
 .triangle-left {
     position: absolute;
