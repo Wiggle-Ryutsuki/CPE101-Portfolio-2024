@@ -396,23 +396,23 @@ img {
     color: var(--Text-light)
 }
 
-.wrap-icon-email {
+.wrap-icon-con {
     display: flex;
     align-items: center; /* Vertically aligns the items */
 }
 
-.wrap-icon-email p {
+.wrap-icon-con p {
     margin: 0; /* Removes default paragraph margin */
 }
 
-.wrap-icon-email svg {
+.wrap-icon-con svg {
     cursor: pointer; /* Optional: changes cursor to pointer on hover */
     color: var(--Text-light);
     margin-left: 10px;
     transition: 0.3s;
 }
 
-.wrap-icon-email svg:hover{
+.wrap-icon-con svg:hover{
     color: var(--Accent-color-light)
 }
 
