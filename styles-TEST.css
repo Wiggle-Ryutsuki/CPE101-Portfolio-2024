@@ -216,26 +216,26 @@ div {
 /* Add arrows to the left container (pointing right) */
 .triangle-left {
     position: absolute;
-    left: -50px; /* Adjust to position the triangle */
+    left: -15px; /* Adjust to position the triangle */
     top: 15px; /* Adjust based on your design */
     width: 0;
     height: 0;
-    border-top: 12px solid transparent;
-    border-right: 20px solid #FF9F55; /* Color of the triangle */
-    border-bottom: 12px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 15px solid var(--Accent-color-light); /* Color of the triangle */
+    border-bottom: 10px solid transparent;
 }
 
 /* Right Triangle */
 .triangle-right {
     position: absolute;
-    right: 50px; /* Adjust to position the triangle */
+    right: -15px; /* Adjust to position the triangle */
     top: 15px; /* Adjust based on your design */
 
     width: 0;
 	height: 0;
-	border-top: 3.5px solid transparent;
-	border-right: 5px solid #555;
-	border-bottom: 3.5px solid transparent;
+	border-top: 5px solid transparent;
+	border-right: 10px solid var(--Accent-color-light);
+	border-bottom: 5px solid transparent;
 }
   
   /* Fix the circle for containers on the right side */
