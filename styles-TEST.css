@@ -148,68 +148,97 @@ div {
   position: relative;
 }
 
-/* Education Section */
-#education {
-    width: 100%;
-    padding: 40px 0;
-    position: relative;
+#education .timeline {
+  position: relative;
+  padding: 20px 0;
 }
 
+/* Center vertical timeline line */
 .timeline {
-    position: relative;
-    padding: 20px 0;
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping to avoid overflow */
-}
+    color:#1a1625
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--Accent-color-light-sec);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
 
+  /* Container around content */
 .timeline-container {
-    padding: 10px 20px; /* Reduced padding for tighter spacing */
+    padding: 10px 40px;
     position: relative;
-    width: 50%; /* Each container takes up half the width */
-    box-sizing: border-box; /* Include padding in width calculation */
-}
-
-/* Align the timeline content */
-.left {
-    text-align: right; /* Align text to the right for left containers */
-}
-
-.right {
-    text-align: left; /* Align text to the left for right containers */
-}
-
-/* Adjust timeline circle positioning */
-.timeline-container::after {
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline-container::after {
     content: '';
     position: absolute;
     width: 25px;
     height: 25px;
+    right: -17px;
     background-color: white;
     border: 4px solid #FF9F55;
+    top: 15px;
     border-radius: 50%;
     z-index: 1;
-}
+  }
 
-.left::after {
-    right: -12px; /* Adjust position for left items */
-}
+  /* Place the container to the left */
+.left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
 
-.right::after {
-    left: -12px; /* Adjust position for right items */
-}
-
-/* Timeline content styles */
+  /* The actual content */
 .timeline-content {
-    padding: 15px 20px; /* Reduced padding for a tighter fit */
+    padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
-}
-
-/* Optional: Responsive adjustments */
-@media (max-width: 768px) {
-    .timeline-container {
-        width: 100%; /* Stack items on smaller screens */
-    }
-}
+  }
