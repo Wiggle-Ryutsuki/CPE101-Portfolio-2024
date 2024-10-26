@@ -62,44 +62,45 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Copies contact
+    // Copies phone number
     const phoneContainer = document.getElementById("phone-contact");
     const phoneNumber = document.getElementById("phone-number").innerText;
-    const tooltip = document.getElementById("tooltip");
-
+    const tooltipPhone = document.getElementById("tooltip-phone");
     phoneContainer.addEventListener("click", function() {
         navigator.clipboard.writeText(phoneNumber).then(() => {
-            tooltip.classList.add("show");
+            tooltipPhone.classList.add("show");
             setTimeout(() => {
-                tooltip.classList.remove("show");
+                tooltipPhone.classList.remove("show");
             }, 1500);
         }).catch(err => {
             console.error("Failed to copy: ", err);
         });
     });
 
+    // Copies first email
     const emailContainer1 = document.getElementById("email-contact-1");
     const email1 = document.getElementById("email-1").innerText;
-
+    const tooltipEmail1 = document.getElementById("tooltip-email1");
     emailContainer1.addEventListener("click", function() {
         navigator.clipboard.writeText(email1).then(() => {
-            tooltip.classList.add("show");
+            tooltipEmail1.classList.add("show");
             setTimeout(() => {
-                tooltip.classList.remove("show");
+                tooltipEmail1.classList.remove("show");
             }, 1500);
         }).catch(err => {
             console.error("Failed to copy: ", err);
         });
     });
 
+    // Copies second email
     const emailContainer2 = document.getElementById("email-contact-2");
     const email2 = document.getElementById("email-2").innerText;
-
+    const tooltipEmail2 = document.getElementById("tooltip-email2");
     emailContainer2.addEventListener("click", function() {
         navigator.clipboard.writeText(email2).then(() => {
-            tooltip.classList.add("show");
+            tooltipEmail2.classList.add("show");
             setTimeout(() => {
-                tooltip.classList.remove("show");
+                tooltipEmail2.classList.remove("show");
             }, 1500);
         }).catch(err => {
             console.error("Failed to copy: ", err);

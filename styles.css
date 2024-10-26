@@ -399,6 +399,7 @@ img {
 .wrap-icon-con {
     display: flex;
     align-items: center; /* Vertically aligns the items */
+    position: relative;
 }
 
 .wrap-icon-con p {
