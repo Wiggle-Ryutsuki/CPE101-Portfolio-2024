@@ -7,8 +7,8 @@
     --color-primary-500:  #a688fa;
     --color-primary-600:  #c5acff;  
     /** CSS LIGHT THEME SURFACE COLORS */ 
-    --color-surface-100:  #121212;
-    --color-surface-200:  #282828;
+    --light-surface-100:  #ffffff;
+    --light-surface-200:  #fafafd;
     --color-surface-300:  #3f3f3f;
     --color-surface-400:  #575757;
     --color-surface-500:  #717171;
@@ -22,8 +22,8 @@
     --color-surface-mixed-600:  #908d96;
 
     /* Light Mode */
-    --Background-light: var(--color-primary-100);
-    --Background-light-sec: var(--color-primary-200);
+    --Background-light: var(--light-surface-100);
+    --Background-light-sec: var(--light-surface-200);
     --Accent-color-light: var(--color-primary-300);
     --Accent-color-light-sec: var(--color-primary-600);
     --Text-color: var(var(--color-surface-100));
