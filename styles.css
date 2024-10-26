@@ -101,6 +101,17 @@ body {
     color: var(--Text-light)
 }
 
+.wrap-email {
+    display: flex; /* Align email text and icon in a row */
+    align-items: center; /* Vertically centers them */
+}
+
+.wrap-email p {
+    margin-right: 5px; /* Space between text and icon */
+    margin-left: 10px; /* Space from the left */
+    font-size: 16px; /* Text size */
+}
+
 
 a{
     cursor: pointer;
