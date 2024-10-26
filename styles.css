@@ -399,7 +399,6 @@ img {
 .wrap-icon-email {
     display: flex;
     align-items: center; /* Vertically aligns the items */
-    justify-content: space-between; /* Ensures even spacing with text on the left and icon on the right */
 }
 
 .wrap-icon-email p {
@@ -409,6 +408,8 @@ img {
 .wrap-icon-email svg {
     flex-shrink: 0; /* Prevents the icon from resizing */
     cursor: pointer; /* Optional: changes cursor to pointer on hover */
+    color: var(--Text-light);
+    margin-left: 10px;
 }
 
 a{
