@@ -248,13 +248,13 @@ img {
     position: relative;
   }
   
-  #education .timeline {
+#education .timeline {
     position: relative;
     padding: 20px 0;
-  }
+}
   
-  /* Center vertical timeline line */
-  .timeline::before {
+/* Center vertical timeline line */
+.timeline::before {
     content: '';
     position: absolute;
     top: 0;
@@ -264,37 +264,37 @@ img {
     background-color: var(--Accent-color-light-sec);
     transform: translateX(-50%);
     z-index: 1;
-  }
-  
-  /* Container for timeline items */
-  .timeline .container-left,
-  .timeline .container-right {
-    position: relative;
-    width: 50%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-  }
-  
-  /* Left container, positioned to the left of the timeline */
-  .timeline .container-left {
-    left: 0;
-    text-align: right; /* Align text to the right */
-  }
-  
-  /* Right container, positioned to the right of the timeline */
-  .timeline .container-right {
-    left: 50%;
-    text-align: left; /* Align text to the left */
-  }
-  
-  /* Timeline content styling */
-  .timeline .timeline-content {
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px var(--Header-text-light-hover);
-    position: relative;
-    z-index: 2;
-  }
+}
+
+/* Container for timeline items */
+.timeline .container-left,
+.timeline .container-right {
+position: relative;
+width: 50%;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+
+/* Left container, positioned to the left of the timeline */
+.timeline .container-left {
+left: 0;
+text-align: right; /* Align text to the right */
+}
+
+/* Right container, positioned to the right of the timeline */
+.timeline .container-right {
+left: 50%;
+text-align: left; /* Align text to the left */
+}
+
+/* Timeline content styling */
+.timeline .timeline-content {
+padding: 20px;
+border-radius: 6px;
+box-shadow: 0 2px 4px var(--Header-text-light-hover);
+position: relative;
+z-index: 2;
+}
 
 .timeline-content{
     text-align: center;

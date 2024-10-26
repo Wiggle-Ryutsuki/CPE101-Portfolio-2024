@@ -152,10 +152,6 @@ div {
   padding: 20px 0;
 }
 
-/* Center vertical timeline line */
-.timeline {
-    color:#1a1625
-  }
   
   /* The actual timeline (the vertical ruler) */
   .timeline::after {
@@ -163,6 +159,7 @@ div {
     position: absolute;
     width: 4px;
     background-color: var(--Accent-color-light-sec);
+    border-radius: 5px;
     top: 0;
     bottom: 0;
     left: 50%;
