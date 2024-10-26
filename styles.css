@@ -36,7 +36,7 @@
     --Text-light: var(--light-text-a0);
     --Text-light-sec: var(--light-text-a30);
     --Header-text-light: var(--light-text-a30);
-    --Header-text-light-hover: var(--light-text-a10);
+    --Header-text-light-hover: var(--);
 
     /** Dark theme primary colors */
     --dark-primary-a0: #382bf0;
@@ -165,7 +165,7 @@ header {
 header.scrolled {
     background-color: var(--Background-light);
     border-bottom: 1px solid rgba(197, 197, 197, 0.5); 
-    box-shadow: 0px 15.213px 30px 0px var(--color-primary-a50); 
+    box-shadow: 0px 15.213px 30px 0px var(--Header-text-light-hover); 
 }
 
 .separator {
