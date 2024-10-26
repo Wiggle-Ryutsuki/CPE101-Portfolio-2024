@@ -266,6 +266,36 @@ img {
     margin-left: -2px;
 }
 
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* Container for timeline items */
+.timeline-container.left,
+.timeline-container.right {
+    position: relative;
+    width: 50%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+  
+/* The circles on the timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    background-color: var(--Accent-color-light);
+    border: 3px solid var(--Accent-color-light-sec);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
 /* Container for timeline items */
 .timeline .container-left,
 .timeline .container-right {
