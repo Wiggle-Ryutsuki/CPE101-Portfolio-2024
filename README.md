@@ -16,11 +16,11 @@ Your portfolio must include the following sections:
 
 - About Me: A brief biography, outlining your background, interests, and any relevant experience.
 
-- Education: A detailed section that lists your academic history, degrees, certifications, or any relevant coursework.
+- Education: A section that lists your academic history, degrees, certifications, or any relevant coursework.
 
 - Skills: A showcase of your technical skills, programming languages, and other proficiencies that demonstrate your capabilities.
 
-- Contact: Provide methods for visitors to reach you, such as a contact form, email address, or links to social profiles.
+- Contact: Provide methods for visitors to reach you, such as an email address, or links to social profiles.
 
 #### Additional Challenges
 
