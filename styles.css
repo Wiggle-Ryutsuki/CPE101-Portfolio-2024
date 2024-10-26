@@ -506,6 +506,6 @@ li {
 
 #footer .container p {
     margin: 0; 
-    color: var(--Text-light-sec); 
+    color: var(--Header-text-light-hover); 
 }
 
