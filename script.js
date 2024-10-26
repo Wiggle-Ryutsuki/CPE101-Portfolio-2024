@@ -92,10 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const emailContainer2 = document.getElementById("phone-contact");
+    const emailContainer2 = document.getElementById("email-contact-2");
     const email2 = document.getElementById("email-2").innerText;
 
-    phoneContainer.addEventListener("click", function() {
+    emailContainer2.addEventListener("click", function() {
         navigator.clipboard.writeText(email2).then(() => {
             tooltip.classList.add("show");
             setTimeout(() => {
