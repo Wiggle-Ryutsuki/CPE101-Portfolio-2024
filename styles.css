@@ -21,6 +21,8 @@
     --light-surface-mixed-a40: #d1ced3;
     --light-surface-mixed-a50: #c6c3c8;
 
+    --light-primary-text: #ffffff;
+
     /* Light Mode */
     --Background-light: var(--light-surface-a0);
     --Background-light-sec: var(--light-surface-a10);
@@ -30,7 +32,7 @@
 
     --Text-color: var(var(--color-surface-100));
     --Text-color-sec: var(var(--color-surface-100));
-    
+
     --Header-Text-color: var(--color-surface-400);
     --Header-Text-color-hover: var(--color-surface-100);
 
