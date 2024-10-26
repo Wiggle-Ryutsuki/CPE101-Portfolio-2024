@@ -97,6 +97,10 @@ body {
     font-size: 16px; /* Set the desired font size for text */
 }
 
+.wrap-icons svg {
+    color: var(--Text-light)
+}
+
 
 a{
     cursor: pointer;
