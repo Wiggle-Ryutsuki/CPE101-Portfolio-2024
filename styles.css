@@ -331,6 +331,10 @@ z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
+
+    .timeline::after {
+        left: -30px;
+    }
     .timeline .container-left,
     .timeline .container-right {
         width: 100%;
