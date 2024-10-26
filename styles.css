@@ -381,7 +381,7 @@ img {
 
 /* Contact styles*/
 
-.contact .container > div {
+#contact .container > div {
     flex: 1; /* Make each column take equal width */
     margin: 0 30px;
 }
