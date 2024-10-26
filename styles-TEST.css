@@ -168,6 +168,7 @@ div {
     bottom: 0;
     left: 50%;
     margin-left: -2px;
+    transform: translateX(-50%);
   }
 
   /* Container around content */
@@ -200,6 +201,7 @@ div {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
+    transform: translate(-50%, 0);
   }
 
   /* Place the container to the left */
