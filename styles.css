@@ -56,10 +56,10 @@
     --dark-surface-mixed-a50: #8b8890;
 
     /* Dark Mode Colors*/
-    --Background-dark: ;
-    --Background-dark-sec: ;
-    --Accent-dark: ;
-    --Accent-dark-sec: ;
+    --Background-dark: var(--dark-surface-mixed-a0);
+    --Background-dark-sec: var(--dark-surface-mixed-a10);
+    --Accent-dark: var(--dark-primary-a0);
+    --Accent-dark-sec: var(--dark-primary-a20);
     --Text-dark: ;
     --Text-dark-sec: ;
     --Header-text-dark: ;
