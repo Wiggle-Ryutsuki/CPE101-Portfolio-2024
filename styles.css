@@ -13,13 +13,8 @@
     --light-surface-a30: #f0f0f5;
     --light-surface-a40: #ebebf0;
     --light-surface-a50: #e6e6ec;
-    /** CSS LIGHT THEME MIXED SURFACE COLORS */ 
-    --light-surface-mixed-a0: #fafafa;
-    --light-surface-mixed-a10: #eeedf2;
-    --light-surface-mixed-a20: #e2e0e7;
-    --light-surface-mixed-a30: #d7d4db;
-    --light-surface-mixed-a40: #cbc7cf;
-    --light-surface-mixed-a50: #c0bbc3;
+
+    --light-surface-a60: #d1d1f0;
 
     --light-text-a0:  #1a1625;
     --light-text-a10:  #2f2b3a;
@@ -36,7 +31,7 @@
     --Text-light: var(--light-text-a0);
     --Text-light-sec: var(--light-text-a30);
     --Header-text-light: var(--light-text-a30);
-    --Header-text-light-hover: var(--);
+    --Header-text-light-hover: var(--light-surface-a60);
 
     /** Dark theme primary colors */
     --dark-primary-a0: #382bf0;
