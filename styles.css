@@ -385,6 +385,7 @@ img {
     display: flex; /* Enables flexbox */
     justify-content: space-between; /* Distributes space evenly between items */
     padding: 10px; /* Optional: Adds some padding */
+    
 }
 
 /* Ensure child elements flex correctly */
@@ -397,6 +398,7 @@ img {
 .contact {
     width: 100%; /* Or any desired width */
     box-sizing: border-box; /* Include padding and borders in element's total width */
+    border: 0;
     
 }
 
