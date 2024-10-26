@@ -310,6 +310,7 @@ img {
     background-color: var(--Accent-color);
     padding: 0;
     margin: 0;
+    transition: 0.5s;
 }
 
 .descript{
