@@ -387,10 +387,16 @@ img {
     padding: 10px; /* Optional: Adds some padding */
 }
 
-/* Optional: Adjust the width of child elements to ensure they align well */
-.contact{ /* Assuming each contact item is wrapped in a div */
+/* Ensure child elements flex correctly */
+.contact .container div { /* Assuming each contact item is wrapped in a div */
     flex: 1; /* Each item takes up equal space */
-    margin: px; /* Optional: Add margin around items for spacing */
+    margin: 5px; /* Adjust this value to control spacing */
+}
+
+/* Optional: If you want to control the overall size of the container */
+.contact {
+    width: 100%; /* Or any desired width */
+    box-sizing: border-box; /* Include padding and borders in element's total width */
 }
 
 .wrap-icons {
