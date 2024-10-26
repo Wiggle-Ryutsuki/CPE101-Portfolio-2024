@@ -165,13 +165,13 @@ header {
 header.scrolled {
     background-color: var(--Background-light);
     border-bottom: 1px solid rgba(197, 197, 197, 0.5); 
-    box-shadow: 0px 15.213px 30px 0px rgba(158, 158, 158, 0.3); 
+    box-shadow: 0px 15.213px 30px 0px var(--color-primary-a50); 
 }
 
 .separator {
     height: 24px; 
     width: 1px;
-    background-color: #d1d5db;
+    background-color: #d1d5db; /*EDIT IF NEEDED*/
     margin-left: 20px;
 }
 
@@ -191,7 +191,7 @@ nav ul li:first-child {
 button {
     border: none;
     border-radius: 10px;
-    color: rgb(140, 218, 249);
+    color: var(--Accent-color-light-sec); /*EDIT IF NEEDED*/
     padding: 10px 20px;
     text-align: center;
     cursor: pointer;
@@ -200,7 +200,7 @@ button {
 nav a {
     display: block;
     text-decoration: none;
-    color: var(--Header-Text-color);
+    color: var(--Header-text-light);
     text-align: center;
     align-items: center;
     transition: 0.2s ease-in-out;
