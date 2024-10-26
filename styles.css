@@ -381,27 +381,9 @@ img {
 
 /* Contact styles*/
 
-.contact .container > div{
-    display: flex; /* Enables flexbox */
-    align-items: center; /* Centers items vertically */
-    margin: 0; /* Remove margins to avoid unwanted spacing */
-    width: 100%; /* Set a width or max-width if needed */
-    max-width: 1200px; /* Optional: Limit max width to prevent wrapping */
-    box-sizing: border-box; /* Ensures padding is included in total width */
-}
-
-/* Ensure child elements flex correctly */
-.contact .container div { /* Assuming each contact item is wrapped in a div */
-    flex: 1; /* Each item takes up equal space */
-    margin: 5px; /* Adjust this value to control spacing */
-}
-
-/* Optional: If you want to control the overall size of the container */
-.contact {
-    width: 100%; /* Or any desired width */
-    box-sizing: border-box; /* Include padding and borders in element's total width */
-    border: 0;
-    
+.contact .container > div {
+    flex: 1; /* Make each column take equal width */
+    margin: 0 30px;
 }
 
 .wrap-icons {
