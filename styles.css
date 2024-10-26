@@ -44,6 +44,16 @@
     --dark-surface-mixed-a30: #56525e;
     --dark-surface-mixed-a40: #706c77;
     --dark-surface-mixed-a50: #8b8890;
+
+    /* Dark Mode Colors*/
+    --Background-dark: ;
+    --Background-dark-sec: ;
+    --Accent-dark: ;
+    --Accent-dark-sec: ;
+    --Text-dark: ;
+    --Text-dark-sec: ;
+    --Header-text-dark: ;
+    --Header-text-dark-sec: ;
     
     /* Light Mode */
     --Background-light: var(--color-primary-100);
@@ -53,6 +63,13 @@
     --Text-color: var(var(--color-surface-100));
     --Header-Text-color: var(--color-surface-400);
     --Header-Text-color-hover: var(--color-surface-100);
+
+    --Accent-dark: ;
+    --Accent-dark-sec: ;
+    --Text-dark: ;
+    --Text-dark-sec: ;
+    --Header-text-dark: ;
+    --Header-text-dark-sec: ;
 
 
 }
