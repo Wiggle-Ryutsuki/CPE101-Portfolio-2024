@@ -388,11 +388,9 @@ img {
 }
 
 /* Optional: Adjust the width of child elements to ensure they align well */
-.contact .container > div { /* Assuming each contact item is wrapped in a div */
-    display: flex;
+.contact{ /* Assuming each contact item is wrapped in a div */
     flex: 1; /* Each item takes up equal space */
-    min-width: 200px; /* Optional: Set a minimum width for items */
-    margin: 10px; /* Optional: Add margin around items for spacing */
+    margin: px; /* Optional: Add margin around items for spacing */
 }
 
 .wrap-icons {
