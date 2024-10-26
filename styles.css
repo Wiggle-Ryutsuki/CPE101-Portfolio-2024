@@ -1,25 +1,35 @@
 :root {
-    /** CSS DARK THEME PRIMARY COLORS */  
+    /** CSS LIGHT THEME PRIMARY COLORS */  
     --color-primary-100:  #ffffff;
     --color-primary-200:  #fafafd;
     --color-primary-300:  #7a5af5;
     --color-primary-400:  #ffffff;
     --color-primary-500:  #a688fa;
     --color-primary-600:  #c5acff;  
-    /** CSS DARK THEME SURFACE COLORS */ 
+    /** CSS LIGHT THEME SURFACE COLORS */ 
     --color-surface-100:  #121212;
     --color-surface-200:  #282828;
     --color-surface-300:  #3f3f3f;
     --color-surface-400:  #575757;
     --color-surface-500:  #717171;
     --color-surface-600:  #8b8b8b;  
-    /** CSS DARK THEME MIXED SURFACE COLORS */ 
+    /** CSS LIGHT THEME MIXED SURFACE COLORS */ 
     --color-surface-mixed-100:  #1a1625;
     --color-surface-mixed-200:  #2f2b3a;
     --color-surface-mixed-300:  #46424f;
     --color-surface-mixed-400:  #5e5a66;
     --color-surface-mixed-500:  #76737e;
     --color-surface-mixed-600:  #908d96;
+
+    /* Light Mode */
+    --Background-light: var(--color-primary-100);
+    --Background-light-sec: var(--color-primary-200);
+    --Accent-color-light: var(--color-primary-300);
+    --Accent-color-light-sec: var(--color-primary-600);
+    --Text-color: var(var(--color-surface-100));
+    --Text-color-sec: var(var(--color-surface-100));
+    --Header-Text-color: var(--color-surface-400);
+    --Header-Text-color-hover: var(--color-surface-100);
 
     /** Dark theme primary colors */
     --dark-primary-a0: #382bf0;
@@ -53,25 +63,7 @@
     --Text-dark: ;
     --Text-dark-sec: ;
     --Header-text-dark: ;
-    --Header-text-dark-sec: ;
-    
-    /* Light Mode */
-    --Background-light: var(--color-primary-100);
-    --Background-light-sec: var(--color-primary-200);
-    --Accent-color-light: var(--color-primary-300);
-    --Accent-color-light-sec: var(--color-primary-600);
-    --Text-color: var(var(--color-surface-100));
-    --Header-Text-color: var(--color-surface-400);
-    --Header-Text-color-hover: var(--color-surface-100);
-
-    --Accent-dark: ;
-    --Accent-dark-sec: ;
-    --Text-dark: ;
-    --Text-dark-sec: ;
-    --Header-text-dark: ;
-    --Header-text-dark-sec: ;
-
-
+    --Header-text-dark-hover: ;
 }
 
 /*Over all webpage*/
