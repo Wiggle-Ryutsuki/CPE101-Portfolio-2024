@@ -244,8 +244,7 @@ img {
 
 /* Center vertical timeline line */
 .timeline {
-    max-width: 1200px;
-    margin: 0 auto;
+    color:#1a1625
   }
   
   /* The actual timeline (the vertical ruler) */
