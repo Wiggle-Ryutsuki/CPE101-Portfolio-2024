@@ -1,0 +1,497 @@
+:root {
+  /* Light Theme*/
+  /** Light theme primary colors */
+  --color-primary-a0: #382bf0;
+  --color-primary-a10: #5e43f3;
+  --color-primary-a20: #7a5af5;
+  --color-primary-a30: #9171f8;
+  --color-primary-a40: #a688fa;
+  --color-primary-a50: #ba9ffb;
+  --color-primary-a60: #c8b0ff;
+  /** CSS LIGHT THEME SURFACE COLORS */
+  --light-surface-a0: #ffffff;
+  --light-surface-a10: #fafafd;
+  --light-surface-a20: #f5f5fa;
+  --light-surface-a30: #f0f0f5;
+  --light-surface-a40: #ebebf0;
+  --light-surface-a50: #e6e6ec;
+
+  --light-surface-a60: #d1d1f0;
+
+  --light-text-a0: #1a1625;
+  --light-text-a10: #2f2b3a;
+  --light-text-a20: #46424f;
+  --light-text-a30: #5e5a66;
+  --light-text-a40: #76737e;
+  --light-text-a50: #908d96;
+
+  /* Light Mode */
+  --Background-light: var(--light-surface-a0);
+  --Background-light-sec: var(--light-surface-a10);
+  --Accent-color-light: var(--color-primary-a20);
+  --Accent-color-light-sec: var(--color-primary-a60);
+  --Text-light: var(--light-text-a0);
+  --Text-light-sec: var(--light-text-a30);
+  --Header-text-light: var(--light-text-a20);
+  --Header-text-light-hover: var(--light-surface-a60);
+
+  /** Dark theme primary colors */
+  --dark-primary-a0: #382bf0;
+  --dark-primary-a10: #5e43f3;
+  --dark-primary-a20: #7a5af5;
+  --dark-primary-a30: #9171f8;
+  --dark-primary-a40: #a688fa;
+  --dark-primary-a50: #ba9ffb;
+
+  /** Dark theme surface colors */
+  --dark-surface-a0: #000000;
+  --dark-surface-a10: #1e1e1e;
+  --dark-surface-a20: #353535;
+  --dark-surface-a30: #4e4e4e;
+  --dark-surface-a40: #696969;
+  --dark-surface-a50: #858585;
+
+  /** Dark theme mixed surface colors */
+  --dark-surface-mixed-a0: #11081b;
+  --dark-surface-mixed-a10: #262230;
+  --dark-surface-mixed-a20: #3e3946;
+  --dark-surface-mixed-a30: #56525e;
+  --dark-surface-mixed-a40: #706c77;
+  --dark-surface-mixed-a50: #8b8890;
+
+  --dark-primary-text: #ffffff;
+
+  /* Dark Mode Colors*/
+  --Background-dark: var(--dark-surface-mixed-a0);
+  --Background-dark-sec: var(--dark-surface-mixed-a10);
+  --Accent-dark: var(--dark-primary-a0); /*Switch to second last primary*/
+  --Accent-dark-sec: var(--dark-primary-a20); /*Switch to last primary*/
+  --Text-dark: var(--dark-primary-text);
+  --Text-dark-sec: ;
+  --Header-text-dark: ;
+  --Header-text-dark-hover: ;
+}
+
+/*Over all webpage*/
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--Background-light);
+  color: var(--Text-light);
+  cursor: default;
+}
+
+.wrapper-container {
+  text-align: center; /* Center the .titles container within its parent */
+}
+
+.titles {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--Accent-color-light-sec);
+  color: var(--Text-light-sec); /* EDIT IT NEEDED*/
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.titles p {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > div {
+  flex: 1; /* Make each column take equal width */
+  margin: 0 60px;
+}
+
+.container > div:first-child {
+  margin-left: 0; /* No left margin for the first column */
+}
+
+.container > div:last-child {
+  margin-right: 0; /* No right margin for the last column */
+}
+
+.content {
+  max-width: 1200px; /* Adjust based on your preference */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Navbar */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--Background-light);
+  z-index: 5;
+  padding: 5px;
+  transition: background-color 0.5s, box-shadow 0.5s;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header.scrolled {
+  background-color: var(--Background-light);
+  border-bottom: 1px solid rgba(197, 197, 197, 0.5);
+  box-shadow: 0px 15.213px 30px 0px var(--Header-text-light-hover);
+}
+
+.separator {
+  height: 24px;
+  width: 1px;
+  background-color: #d1d5db; /*EDIT IF NEEDED*/
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  color: var(--Accent-color-light-sec); /*EDIT IF NEEDED*/
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--Header-text-light);
+  text-align: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+nav a:hover {
+  color: var(--Accent-color-light);
+}
+nav a:focus-within {
+  color: var(--Accent-color-light);
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+/* Pages */
+#landing,
+#contact {
+  text-align: left;
+}
+
+#about,
+#skills,
+#footer {
+  background-color: var(--Background-light-sec);
+  text-align: right;
+}
+
+img {
+  width: 500px;
+  height: auto;
+  float: right;
+}
+
+/* Landing Section */
+
+/* Education Section*/
+#education {
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+}
+
+#education .timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Center vertical timeline line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: var(--Accent-color-light-sec);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Container for timeline items */
+.timeline .container-left,
+.timeline .container-right {
+  position: relative;
+  width: 50%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+/* Left container, positioned to the left of the timeline */
+.timeline .container-left {
+  left: 0;
+  text-align: right; /* Align text to the right */
+}
+
+/* Right container, positioned to the right of the timeline */
+.timeline .container-right {
+  left: 50%;
+  text-align: left; /* Align text to the left */
+}
+
+/* Timeline content styling */
+.timeline .timeline-content {
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px var(--Header-text-light-hover);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-content {
+  text-align: center;
+}
+
+.timeline-content div {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px;
+}
+
+/* Circle markers on the timeline */
+.timeline .container-left::before,
+.timeline .container-right::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--Accent-color-light);
+  border: 3px solid var(--Accent-color-light-sec);
+  border-radius: 50%;
+  z-index: 3;
+}
+
+/* Position markers on the left of the line */
+.timeline .container-left::before {
+  right: -9px; /* Adjust to move closer to the center */
+}
+
+.timeline .container-right::before {
+  left: -9px; /* Adjust to move closer to the center */
+}
+
+@media screen and (max-width: 768px) {
+  .timeline .container-left,
+  .timeline .container-right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  /* Adjust marker placement for mobile */
+  .timeline .container-left::before,
+  .timeline .container-right::before {
+    left: -6px;
+  }
+
+  /* Center the timeline on mobile */
+  .timeline::before {
+    left: 40px;
+  }
+}
+
+/* Skills Section */
+
+.myProgress {
+  width: 100%;
+  background-color: var(--Accent-color-light-sec);
+  border: 3px solid var(--Header-text-light-hover);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.myBar {
+  width: 1%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--Accent-color-light);
+  padding: 0;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.descript {
+  text-align: center;
+}
+
+/* Contact styles*/
+
+#contact .container > div {
+  flex: 1; /* Make each column take equal width */
+  margin: 0 30px;
+}
+
+.wrap-icons {
+  display: flex; /* Aligns children (icon and text) in a row */
+  align-items: center; /* Centers them vertically */
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 5px;
+}
+
+.wrap-icons p {
+  margin-left: 10px; /* Remove default margin */
+  font-size: 18px; /* Set the desired font size for text */
+  font-weight: bold;
+}
+
+.wrap-icons svg {
+  color: var(--Text-light);
+}
+
+.wrap-icon-con {
+  display: flex;
+  align-items: center; /* Vertically aligns the items */
+  position: relative;
+  padding: 5px;
+}
+
+.wrap-icon-con p {
+  margin: 0; /* Removes default paragraph margin */
+}
+
+.wrap-icon-con svg {
+  cursor: pointer; /* Optional: changes cursor to pointer on hover */
+  color: var(--Text-light);
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.wrap-icon-con svg:hover {
+  color: var(--Accent-color-light);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit color from parent element */
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--Accent-color-light);
+}
+
+.wrap-icons div {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  margin-left: 30px;
+}
+
+/* Style for list items */
+li {
+  margin: 0; /* Remove margin from list items */
+  padding: 0; /* Adjust padding for space between items */
+}
+
+.wrap-email svg {
+  width: 20px; /* Icon size for email */
+  height: 20px; /* Icon size for email */
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--Accent-color-light-sec);
+  color: var(--Background-light);
+  text-align: center;
+  padding: 5px 6px;
+  border-radius: 4px;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 11px;
+  font-weight: bold;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tooltip.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Footer styles*/
+
+#footer {
+  padding: 10px 0; /* Padding for spacing */
+  font-size: 15px;
+}
+
+#footer .content {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  margin: 0 auto; /* Center content on the page */
+}
+
+#footer .container p {
+  margin: 0;
+  color: var(--Header-text-light-hover);
+}
