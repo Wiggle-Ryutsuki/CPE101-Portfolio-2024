@@ -396,17 +396,20 @@ img {
     color: var(--Text-light)
 }
 
-.wrap-email {
-    display: flex; /* Align email text and icon in a row */
-    align-items: center; /* Vertically centers them */
+.wrap-icon-email {
+    display: flex;
+    align-items: center; /* Vertically aligns the items */
+    justify-content: space-between; /* Ensures even spacing with text on the left and icon on the right */
 }
 
-.wrap-email p {
-    margin-right: 5px; /* Space between text and icon */
-    margin-left: 10px; /* Space from the left */
-    font-size: 16px; /* Text size */
+.wrap-icon-email p {
+    margin: 0; /* Removes default paragraph margin */
 }
 
+.wrap-icon-email svg {
+    flex-shrink: 0; /* Prevents the icon from resizing */
+    cursor: pointer; /* Optional: changes cursor to pointer on hover */
+}
 
 a{
     cursor: pointer;
