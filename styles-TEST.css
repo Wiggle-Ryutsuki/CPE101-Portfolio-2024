@@ -192,7 +192,6 @@ div {
     position: absolute;
     width: 12px;
     height: 12px;
-    right: -9px;
     margin-left: -6px;
     background-color: var(--Accent-color-light);
     border: 3px solid var(--Accent-color-light-sec);
@@ -203,8 +202,16 @@ div {
 }
 
 /* Fix the circle for containers on the right side */
+/* Center the circle for left containers */
+.left::after {
+    left: calc(100% - 3px); /* Positions it at the edge */
+    transform: translateX(0);
+}
+
+/* Center the circle for right containers */
 .right::after {
-    left: 0%; /* Center the circle */
+    left: -3px; /* Aligns it to the left edge for the right container */
+    transform: translateX(0);
 }
 
   /* Place the container to the left */
