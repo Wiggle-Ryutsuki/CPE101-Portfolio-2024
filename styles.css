@@ -21,7 +21,12 @@
     --light-surface-mixed-a40: #d1ced3;
     --light-surface-mixed-a50: #c6c3c8;
 
-    --light-primary-text: #ffffff;
+    --light-text-a0:  #1a1625;
+    --light-text-a10:  #2f2b3a;
+    --light-text-a20:  #46424f;
+    --light-text-a30:  #5e5a66;
+    --light-text-a40:  #76737e;
+    --light-text-a50:  #908d96;
 
     /* Light Mode */
     --Background-light: var(--light-surface-a0);
@@ -30,7 +35,7 @@
     --Accent-color-light: var(--color-primary-a20);
     --Accent-color-light-sec: var(--color-primary-a50);
 
-    --Text-color: var(var(--color-surface-100));
+    --Text-color: var(--light-text-a0);
     --Text-color-sec: var(var(--color-surface-100));
 
     --Header-Text-color: var(--color-surface-400);
