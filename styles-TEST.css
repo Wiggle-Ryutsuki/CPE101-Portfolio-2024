@@ -224,7 +224,7 @@ div {
     right: 1px; /* Position it just outside the left timeline content */
     border: 10px solid transparent; /* Use transparent border for consistent size */
     border-right-color: white; /* Change to match your container color */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);/* Add shadow */
 }
 
 /* Add arrows to the right container (pointing left) */
