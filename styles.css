@@ -318,77 +318,33 @@ img {
     left: 50%;
 }
 
-/* Container for timeline items */
-.timeline .container-left,
-.timeline .container-right {
-position: relative;
-width: 50%;
-padding: 10px 20px;
-box-sizing: border-box;
-}
-
-/* Left container, positioned to the left of the timeline */
-.timeline .container-left {
-left: 0;
-text-align: right; /* Align text to the right */
-}
-
-/* Right container, positioned to the right of the timeline */
-.timeline .container-right {
-left: 50%;
-text-align: left; /* Align text to the left */
-}
-
-/* Timeline content styling */
-.timeline .timeline-content {
-padding: 20px;
-border-radius: 6px;
-box-shadow: 0 2px 4px var(--Header-text-light-hover);
-position: relative;
-z-index: 2;
-}
+.timeline-content {
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px var(--Header-text-light-hover);
+    position: relative;
+    z-index: 2;
+  }
 
 .timeline-content{
     text-align: center;
-  }
+}
 
-  .timeline-content div{
+.timeline-content div{
     font-size: 20px;
     font-weight: bold;
     margin: 0;
     padding: 5px;
-  }
-  
-  /* Circle markers on the timeline */
-  .timeline .container-left::before,
-  .timeline .container-right::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    width: 12px;
-    height: 12px;
-    background-color: var(--Accent-color-light);
-    border: 3px solid var(--Accent-color-light-sec);
-    border-radius: 50%;
-    z-index: 3;
-  }
-  
-  /* Position markers on the left of the line */
-  .timeline .container-left::before {
-    right: -9px; /* Adjust to move closer to the center */
 }
 
-.timeline .container-right::before {
-    left: -9px; /* Adjust to move closer to the center */
-}
 
 @media screen and (max-width: 768px) {
 
     .timeline::after {
-        left: -30px;
+        left: 30px;
     }
-    .timeline .container-left,
-    .timeline .container-right {
+    .timeline-container.left,
+    .timeline-container.right {
         width: 100%;
         left: 0;
         text-align: left;
@@ -402,8 +358,13 @@ z-index: 2;
     }
 
     /* Center the timeline on mobile */
-    .timeline::before {
-        left: 40px;
+    .left::after, .right::after {
+        left: 27px;
+    }
+        
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
     }
 }
 
