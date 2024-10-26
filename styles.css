@@ -343,6 +343,7 @@ img {
     .timeline::after {
         left: 30px;
     }
+
     .timeline-container.left,
     .timeline-container.right {
         width: 100%;
@@ -351,7 +352,6 @@ img {
         padding-left: 60px;
     }
 
-    /* Center the timeline on mobile */
     .left::after, .right::after {
         left: 27px;
     }
