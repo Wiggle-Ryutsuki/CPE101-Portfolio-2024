@@ -407,6 +407,8 @@ img {
     margin: 0; /* Removes default paragraph margin */
 }
 
+
+
 .wrap-icon-con svg {
     cursor: pointer; /* Optional: changes cursor to pointer on hover */
     color: var(--Text-light);
