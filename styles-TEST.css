@@ -168,7 +168,6 @@ div {
     bottom: 0;
     left: 50%;
     margin-left: -2px;
-    transform: translateX(-50%);
   }
 
   /* Container around content */
@@ -201,7 +200,7 @@ div {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-    transform: translate(-50%, 0);
+
   }
 
   /* Place the container to the left */
@@ -243,10 +242,9 @@ div {
   }
   
   /* Fix the circle for containers on the right side */
-.right::after {
-    left: -16px;
+  .right::after {
+    left: 0%; /* Center the circle */
   }
-
   /* The actual content */
 .timeline-content {
     padding: 20px;
