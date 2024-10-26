@@ -240,13 +240,11 @@ div {
   }
   
   /* Fix the circle for containers on the right side */
-  .right::after {
+.right::after {
     left: -16px;
   }
 
   /* The actual content */
-
-
 .timeline-content {
     padding: 20px;
     border-radius: 6px;
