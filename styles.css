@@ -23,9 +23,9 @@
     
     /* Light Mode */
     --Background-light: var(--color-primary-100);
-    --Background-light-second: var(--color-primary-200);
-    --Accent-color: var(--color-primary-300);
-    --Accent-color-sec: var(--color-primary-600);
+    --Background-light-sec: var(--color-primary-200);
+    --Accent-color-light: var(--color-primary-300);
+    --Accent-color-light-sec: var(--color-primary-600);
     --Text-color: var(var(--color-surface-100));
     --Header-Text-color: var(--color-surface-400);
     --Header-Text-color-hover: var(--color-surface-100);
@@ -55,7 +55,7 @@ body {
 .titles {
     display: inline-block;
     text-align: center;
-    background-color: var(--Accent-color-sec);
+    background-color: var(--Accent-color-light-sec);
     color: var(--Header-Text-color-hover);
     padding: 4px 12px; 
     border-radius: 50px; 
@@ -165,10 +165,10 @@ nav a {
     
 }
 nav a:hover {
-    color: var(--Accent-color);
+    color: var(--Accent-color-light);
 }
 nav a:focus-within {
-    color: var(--Accent-color);
+    color: var(--Accent-color-light);
 }
 
 nav ul li:not(:first-child){
@@ -181,7 +181,7 @@ nav ul li:not(:first-child){
 }
 
 #about, #skills {
-    background-color: var(--Background-light-second); 
+    background-color: var(--Background-light-sec); 
     text-align: right;
 
 }
@@ -256,8 +256,8 @@ img {
     top: 20px;
     width: 12px;
     height: 12px;
-    background-color: var(--Accent-color);
-    border: 3px solid var(--Accent-color-sec);
+    background-color: var(--Accent-color-light);
+    border: 3px solid var(--Accent-color-light-sec);
     border-radius: 50%;
     z-index: 3;
   }
@@ -297,8 +297,8 @@ img {
 
 .myProgress {
     width: 100%;
-    background-color: var(--Accent-color-sec);
-    border: 4px solid var(--Background-light-second);
+    background-color: var(--Accent-color-light-sec);
+    border: 4px solid var(--Background-light-sec);
     border-radius: 10px;
     overflow: hidden;
     height: 10px;
@@ -310,7 +310,7 @@ img {
     width: 1%;
     height: 100%;
     border-radius: 10px;
-    background-color: var(--Accent-color);
+    background-color: var(--Accent-color-light);
     padding: 0;
     margin: 0;
     transition: 0.5s;
