@@ -384,12 +384,12 @@ img {
 .contact .container {
     display: flex; /* Enables flexbox */
     justify-content: space-between; /* Distributes space evenly between items */
-    align-items: center; /* Centers items vertically */
     padding: 10px; /* Optional: Adds some padding */
 }
 
 /* Optional: Adjust the width of child elements to ensure they align well */
 .contact .container > div { /* Assuming each contact item is wrapped in a div */
+    display: flex;
     flex: 1; /* Each item takes up equal space */
     min-width: 200px; /* Optional: Set a minimum width for items */
     margin: 10px; /* Optional: Add margin around items for spacing */
@@ -468,25 +468,6 @@ li {
     height: 20px; /* Icon size for email */
 }
 
-/*Footer styles*/
-
-#footer {
-    padding: 10px 0; /* Padding for spacing */
-    font-size: 15px;
-}
-
-#footer .content {
-    display: flex; /* Flexbox for centering */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    margin: 0 auto; /* Center content on the page */
-}
-
-#footer .container p {
-    margin: 0; 
-    color: var(--Text-light-sec); 
-}
-
 .copy-button {
     background: none;
     border: none;
@@ -516,3 +497,23 @@ li {
     visibility: visible;
     opacity: 1;
 }
+
+/*Footer styles*/
+
+#footer {
+    padding: 10px 0; /* Padding for spacing */
+    font-size: 15px;
+}
+
+#footer .content {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    margin: 0 auto; /* Center content on the page */
+}
+
+#footer .container p {
+    margin: 0; 
+    color: var(--Text-light-sec); 
+}
+
