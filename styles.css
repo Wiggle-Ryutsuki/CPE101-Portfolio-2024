@@ -428,6 +428,10 @@ a:hover{
     color: var(--Accent-color-light)
 }
 
+.wrap-icons div{
+    margin-bottom: 10px;
+}
+
 ul {
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove default padding */
