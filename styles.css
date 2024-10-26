@@ -230,6 +230,21 @@ img {
     float: right;
 }
 
+/* Landing Section */
+
+.material-icons-outlined #location{
+    vertical-align: middle; /* Aligns the icon and text vertically */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+
+
+p #locate{
+    display: inline; /* Ensures the paragraph is inline with the icon */
+    margin: 0; /* Remove default margin for cleaner alignment */
+}
+
+
 
 /* Education Section*/
 #education {
