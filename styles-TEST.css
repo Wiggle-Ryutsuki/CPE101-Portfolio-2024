@@ -219,8 +219,8 @@ div {
     width: 0;
     height: 0;
 }
-
 /* Add arrows to the left container (pointing right) */
+/*facing right*/
 .triangle-left {
     position: absolute;
     left: -15px; /* Adjust to position the triangle */
@@ -232,12 +232,12 @@ div {
     border-bottom: 10px solid transparent;
 }
 
-/* Right Triangle */
+/* Right Triangle facing left*/
 .triangle-right {
 	width: 0;
 	height: 0;
 	border-top: 10px solid transparent;
-	border-left: 20px solid #555;
+	border-right: 20px solid #555;
 	border-bottom: 10px solid transparent;
 }
   
