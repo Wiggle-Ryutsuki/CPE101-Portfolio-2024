@@ -1,5 +1,6 @@
 :root {
-    /** Dark theme primary colors */
+    /* Light Theme*/
+    /** Light theme primary colors */
     --color-primary-a0: #382bf0;
     --color-primary-a10: #5e43f3;
     --color-primary-a20: #7a5af5;
@@ -33,6 +34,7 @@
     --Text-light-sec: var(--light-text-a30);
     --Header-text-light: var(--light-text-a20);
     --Header-text-light-hover: var(--light-surface-a60);
+
 
     /** Dark theme primary colors */
     --dark-primary-a0: #382bf0;
@@ -84,6 +86,16 @@ body {
     background-color: var(--Background-light);
     color: var(--Text-light);
     cursor: default;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from parent element */
+}
+
+li{
+    
 }
 
 .wrapper-container {
