@@ -194,8 +194,8 @@ div {
     height: 12px;
     right: -17px;
     margin-left: -6px;
-    background-color: white;
-    border: 4px solid #FF9F55;
+    background-color: var(--Accent-color-light);
+    border: 3px solid var(--Accent-color-light-sec);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
