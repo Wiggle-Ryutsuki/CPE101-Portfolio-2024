@@ -20,6 +20,30 @@
     --color-surface-mixed-400:  #5e5a66;
     --color-surface-mixed-500:  #76737e;
     --color-surface-mixed-600:  #908d96;
+
+    /** Dark theme primary colors */
+    --dark-primary-a0: #382bf0;
+    --dark-primary-a10: #5e43f3;
+    --dark-primary-a20: #7a5af5;
+    --dark-primary-a30: #9171f8;
+    --dark-primary-a40: #a688fa;
+    --dark-primary-a50: #ba9ffb;
+
+    /** Dark theme surface colors */
+    --dark-surface-a0: #000000;
+    --dark-surface-a10: #1e1e1e;
+    --dark-surface-a20: #353535;
+    --dark-surface-a30: #4e4e4e;
+    --dark-surface-a40: #696969;
+    --dark-surface-a50: #858585;
+
+    /** Dark theme mixed surface colors */
+    --dark-surface-mixed-a0: #11081b;
+    --dark-surface-mixed-a10: #262230;
+    --dark-surface-mixed-a20: #3e3946;
+    --dark-surface-mixed-a30: #56525e;
+    --dark-surface-mixed-a40: #706c77;
+    --dark-surface-mixed-a50: #8b8890;
     
     /* Light Mode */
     --Background-light: var(--color-primary-100);
