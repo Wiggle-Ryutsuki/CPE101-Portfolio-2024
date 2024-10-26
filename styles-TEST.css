@@ -243,255 +243,41 @@ img {
 }
 
 /* Center vertical timeline line */
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 4px;
-  height: 100%;
-  background-color: var(--Accent-color-light-sec);
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-/* Container for timeline items */
-.timeline .container-left,
-.timeline .container-right {
-  position: relative;
-  width: 50%;
-  padding: 10px 20px;
-  box-sizing: border-box;
-}
-
-/* Left container, positioned to the left of the timeline */
-.timeline .container-left {
-  left: 0;
-  text-align: right; /* Align text to the right */
-}
-
-/* Right container, positioned to the right of the timeline */
-.timeline .container-right {
-  left: 50%;
-  text-align: left; /* Align text to the left */
-}
-
-/* Timeline content styling */
-.timeline .timeline-content {
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px var(--Header-text-light-hover);
-  position: relative;
-  z-index: 2;
-}
-
-.timeline-content {
-  text-align: center;
-}
-
-.timeline-content div {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-  padding: 5px;
-}
-
-/* Circle markers on the timeline */
-.timeline .container-left::before,
-.timeline .container-right::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  width: 12px;
-  height: 12px;
-  background-color: var(--Accent-color-light);
-  border: 3px solid var(--Accent-color-light-sec);
-  border-radius: 50%;
-  z-index: 3;
-}
-
-/* Position markers on the left of the line */
-.timeline .container-left::before {
-  right: -9px; /* Adjust to move closer to the center */
-}
-
-.timeline .container-right::before {
-  left: -9px; /* Adjust to move closer to the center */
-}
-
-@media screen and (max-width: 768px) {
-  .timeline .container-left,
-  .timeline .container-right {
-    width: 100%;
-    left: 0;
-    text-align: left;
-    padding-left: 40px;
+.timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--Accent-color-light-sec);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
   }
 
-  /* Adjust marker placement for mobile */
-  .timeline .container-left::before,
-  .timeline .container-right::before {
-    left: -6px;
+  /* Container around content */
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
   }
-
-  /* Center the timeline on mobile */
-  .timeline::before {
-    left: 40px;
+  
+  /* The circles on the timeline */
+  .timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
   }
-}
-
-/* Skills Section */
-
-.myProgress {
-  width: 100%;
-  background-color: var(--Accent-color-light-sec);
-  border: 3px solid var(--Header-text-light-hover);
-  border-radius: 10px;
-  overflow: hidden;
-  height: 10px;
-  padding: 0;
-  margin: 0;
-}
-
-.myBar {
-  width: 1%;
-  height: 100%;
-  border-radius: 10px;
-  background-color: var(--Accent-color-light);
-  padding: 0;
-  margin: 0;
-  transition: 0.5s;
-}
-
-.descript {
-  text-align: center;
-}
-
-/* Contact styles*/
-
-#contact .container > div {
-  flex: 1; /* Make each column take equal width */
-  margin: 0 30px;
-}
-
-.wrap-icons {
-  display: flex; /* Aligns children (icon and text) in a row */
-  align-items: center; /* Centers them vertically */
-  margin: 0;
-  padding-bottom: 0;
-  padding-top: 5px;
-}
-
-.wrap-icons p {
-  margin-left: 10px; /* Remove default margin */
-  font-size: 18px; /* Set the desired font size for text */
-  font-weight: bold;
-}
-
-.wrap-icons svg {
-  color: var(--Text-light);
-}
-
-.wrap-icon-con {
-  display: flex;
-  align-items: center; /* Vertically aligns the items */
-  position: relative;
-  padding: 5px;
-}
-
-.wrap-icon-con p {
-  margin: 0; /* Removes default paragraph margin */
-}
-
-.wrap-icon-con svg {
-  cursor: pointer; /* Optional: changes cursor to pointer on hover */
-  color: var(--Text-light);
-  margin-left: 10px;
-  transition: 0.3s;
-}
-
-.wrap-icon-con svg:hover {
-  color: var(--Accent-color-light);
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none; /* Remove underline from link */
-  color: inherit; /* Inherit color from parent element */
-  transition: 0.3s;
-}
-
-a:hover {
-  color: var(--Accent-color-light);
-}
-
-.wrap-icons div {
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-  margin-left: 30px;
-}
-
-/* Style for list items */
-li {
-  margin: 0; /* Remove margin from list items */
-  padding: 0; /* Adjust padding for space between items */
-}
-
-.wrap-email svg {
-  width: 20px; /* Icon size for email */
-  height: 20px; /* Icon size for email */
-}
-
-.copy-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  display: inline-flex;
-  align-items: center;
-}
-
-.tooltip {
-  visibility: hidden;
-  opacity: 0;
-  background-color: var(--Accent-color-light-sec);
-  color: var(--Background-light);
-  text-align: center;
-  padding: 5px 6px;
-  border-radius: 4px;
-  position: absolute;
-  top: -20px;
-  right: 0;
-  font-size: 11px;
-  font-weight: bold;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.tooltip.show {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*Footer styles*/
-
-#footer {
-  padding: 10px 0; /* Padding for spacing */
-  font-size: 15px;
-}
-
-#footer .content {
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  margin: 0 auto; /* Center content on the page */
-}
-
-#footer .container p {
-  margin: 0;
-  color: var(--Header-text-light-hover);
-}
