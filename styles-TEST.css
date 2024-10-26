@@ -232,9 +232,9 @@ div {
     top: 15px; /* Adjust based on your design */
     width: 0;
 	height: 0;
-	border-top: 5px solid transparent;
-	border-right: 10px solid var(--Accent-color-light);
-	border-bottom: 5px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 15px solid var(--Accent-color-light); /* Color of the triangle */
+    border-bottom: 10px solid transparent;
 }
   
   /* Fix the circle for containers on the right side */
