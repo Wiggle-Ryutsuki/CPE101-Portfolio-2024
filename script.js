@@ -77,5 +77,33 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("Failed to copy: ", err);
         });
     });
+
+    const emailContainer1 = document.getElementById("email-contact-1");
+    const email1 = document.getElementById("email-1").innerText;
+
+    emailContainer1.addEventListener("click", function() {
+        navigator.clipboard.writeText(email1).then(() => {
+            tooltip.classList.add("show");
+            setTimeout(() => {
+                tooltip.classList.remove("show");
+            }, 1500);
+        }).catch(err => {
+            console.error("Failed to copy: ", err);
+        });
+    });
+
+    const emailContainer2 = document.getElementById("phone-contact");
+    const email2 = document.getElementById("email-2").innerText;
+
+    phoneContainer.addEventListener("click", function() {
+        navigator.clipboard.writeText(email2).then(() => {
+            tooltip.classList.add("show");
+            setTimeout(() => {
+                tooltip.classList.remove("show");
+            }, 1500);
+        }).catch(err => {
+            console.error("Failed to copy: ", err);
+        });
+    });
     
 });
