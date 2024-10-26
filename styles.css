@@ -1,11 +1,11 @@
 :root {
-    /** CSS LIGHT THEME PRIMARY COLORS */  
-    --color-primary-100:  #ffffff;
-    --color-primary-200:  #fafafd;
-    --color-primary-300:  #7a5af5;
-    --color-primary-400:  #ffffff;
-    --color-primary-500:  #a688fa;
-    --color-primary-600:  #c5acff;  
+    /** Dark theme primary colors */
+    --color-primary-a0: #382bf0;
+    --color-primary-a10: #5e43f3;
+    --color-primary-a20: #7a5af5;
+    --color-primary-a30: #9171f8;
+    --color-primary-a40: #a688fa;
+    --color-primary-a50: #ba9ffb;
     /** CSS LIGHT THEME SURFACE COLORS */ 
     --light-surface-100:  #ffffff;
     --light-surface-200:  #fafafd;
@@ -24,8 +24,8 @@
     /* Light Mode */
     --Background-light: var(--light-surface-100);
     --Background-light-sec: var(--light-surface-200);
-    --Accent-color-light: var(--color-primary-300);
-    --Accent-color-light-sec: var(--color-primary-600);
+    --Accent-color-light: var(--color-primary-a20);
+    --Accent-color-light-sec: var(--color-primary-a50);
     --Text-color: var(var(--color-surface-100));
     --Text-color-sec: var(var(--color-surface-100));
     --Header-Text-color: var(--color-surface-400);
