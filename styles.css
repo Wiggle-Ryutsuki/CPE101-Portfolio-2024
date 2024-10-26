@@ -497,8 +497,8 @@ li {
 }
 
 .tooltip {
-    visibility: visible;
-    opacity: 1;
+    visibility: hidden;
+    opacity: 0;
     background-color: var(--Accent-color-light-sec);
     color: var(--Background-light);
     text-align: center;
