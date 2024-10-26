@@ -31,15 +31,12 @@
     /* Light Mode */
     --Background-light: var(--light-surface-a0);
     --Background-light-sec: var(--light-surface-a10);
-
     --Accent-color-light: var(--color-primary-a20);
     --Accent-color-light-sec: var(--color-primary-a50);
-
-    --Text-color: var(--light-text-a0);
-    --Text-color-sec: var(var(--color-surface-100));
-
-    --Header-Text-color: var(--color-surface-400);
-    --Header-Text-color-hover: var(--color-surface-100);
+    --Text-light: var(--light-text-a0);
+    --Text-light-sec: var(--light-text-a30);
+    --Header-text-light: var(--light-text-a30);
+    --Header-text-light-hover: var(--light-text-a10);
 
     /** Dark theme primary colors */
     --dark-primary-a0: #382bf0;
@@ -88,8 +85,8 @@ body {
 
     margin: 0;
     padding: 0;
-    background-color: var(--Background);
-    color: var(--Text-color);
+    background-color: var(--Background-light);
+    color: var(--Text-light);
     cursor: default;
 }
 
@@ -101,7 +98,7 @@ body {
     display: inline-block;
     text-align: center;
     background-color: var(--Accent-color-light-sec);
-    color: var(--Header-Text-color-hover);
+    color: var(--Header-text-light); /* EDIT IT NEEDED*/
     padding: 4px 12px; 
     border-radius: 50px; 
     font-size: 14px;
