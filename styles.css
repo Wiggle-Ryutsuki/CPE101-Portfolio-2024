@@ -30,7 +30,7 @@
     --Accent-color-light-sec: var(--color-primary-a50);
     --Text-light: var(--light-text-a0);
     --Text-light-sec: var(--light-text-a30);
-    --Header-text-light: var(--light-text-a30);
+    --Header-text-light: var(--light-text-a20);
     --Header-text-light-hover: var(--light-surface-a60);
 
     /** Dark theme primary colors */
@@ -93,7 +93,7 @@ body {
     display: inline-block;
     text-align: center;
     background-color: var(--Accent-color-light-sec);
-    color: var(--Header-text-light); /* EDIT IT NEEDED*/
+    color: var(--Text-light-sec); /* EDIT IT NEEDED*/
     padding: 4px 12px; 
     border-radius: 50px; 
     font-size: 14px;
