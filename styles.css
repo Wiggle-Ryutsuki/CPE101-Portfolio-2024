@@ -221,9 +221,13 @@ nav ul li:not(:first-child){
     text-align: left;
 }
 
-#about, #skills {
+#about, #skills, #footer{
     background-color: var(--Background-light-sec); 
     text-align: right;
+
+}
+
+#footer .container{
 
 }
 
