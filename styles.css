@@ -9,10 +9,10 @@
     /** CSS LIGHT THEME SURFACE COLORS */ 
     --light-surface-a0:  #ffffff;
     --light-surface-a10:  #fafafd;
-    --color-surface-300:  #3f3f3f;
-    --color-surface-400:  #575757;
-    --color-surface-500:  #717171;
-    --color-surface-600:  #8b8b8b;  
+    --light-surface-a20: #f5f5fa;
+    --light-surface-a30: #f0f0f5;
+    --light-surface-a40: #ebebf0;
+    --light-surface-a50: #e6e6ec;
     /** CSS LIGHT THEME MIXED SURFACE COLORS */ 
     --color-surface-mixed-100:  #1a1625;
     --color-surface-mixed-200:  #2f2b3a;
