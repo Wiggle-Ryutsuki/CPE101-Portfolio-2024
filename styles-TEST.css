@@ -214,32 +214,27 @@ div {
   }
   
 /* Add arrows to the left container (pointing right) */
-/* Arrow for the left container */
-.left::before {
-    content: '';
+.triangle-left {
     position: absolute;
-    top: 20px; /* Adjust based on your design */
-    right: 100%; /* Position to the left of the container */
+    left: -50px; /* Adjust to position the triangle */
+    top: 15px; /* Adjust based on your design */
     width: 0;
     height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-right: 10px solid #FF9F55; /* Color of the arrow */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for the arrow */
+    border-top: 12px solid transparent;
+    border-right: 20px solid #FF9F55; /* Color of the triangle */
+    border-bottom: 12px solid transparent;
 }
 
-/* Arrow for the right container */
-.right::before {
-    content: '';
+/* Right Triangle */
+.triangle-right {
     position: absolute;
-    top: 20px; /* Adjust based on your design */
-    left: 100%; /* Position to the right of the container */
+    right: -50px; /* Adjust to position the triangle */
+    top: 15px; /* Adjust based on your design */
     width: 0;
     height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 10px solid #FF9F55; /* Color of the arrow */
-    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-top: 12px solid transparent;
+    border-left: 20px solid #FF9F55; /* Color of the triangle */
+    border-bottom: 12px solid transparent;
 }
   
   /* Fix the circle for containers on the right side */
