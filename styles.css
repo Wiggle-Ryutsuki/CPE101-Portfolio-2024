@@ -6,6 +6,7 @@
     --color-primary-a30: #9171f8;
     --color-primary-a40: #a688fa;
     --color-primary-a50: #ba9ffb;
+    --color-primary-a60: #c8b0ff;
     /** CSS LIGHT THEME SURFACE COLORS */ 
     --light-surface-a0:  #ffffff;
     --light-surface-a10:  #fafafd;
@@ -27,7 +28,7 @@
     --Background-light: var(--light-surface-a0);
     --Background-light-sec: var(--light-surface-a10);
     --Accent-color-light: var(--color-primary-a20);
-    --Accent-color-light-sec: var(--color-primary-a50);
+    --Accent-color-light-sec: var(--color-primary-a60);
     --Text-light: var(--light-text-a0);
     --Text-light-sec: var(--light-text-a30);
     --Header-text-light: var(--light-text-a20);
@@ -250,7 +251,7 @@ img {
     left: 50%;
     width: 4px;
     height: 100%;
-    background-color: #ddd;
+    background-color: var(--Accent-color-light-sec);
     transform: translateX(-50%);
     z-index: 1;
   }
