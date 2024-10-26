@@ -240,9 +240,10 @@ div {
     
     /* Full-width containers */
     .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding-left: 40px;
     }
     
     /* Make sure all circles are at the same spot */
