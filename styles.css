@@ -246,7 +246,7 @@ img {
     width: 100%;
     padding: 40px 0;
     position: relative;
-  }
+}
   
 #education .timeline {
     position: relative;
@@ -254,16 +254,16 @@ img {
 }
   
 /* Center vertical timeline line */
-.timeline::before {
+.timeline::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 50%;
     width: 4px;
-    height: 100%;
     background-color: var(--Accent-color-light-sec);
-    transform: translateX(-50%);
-    z-index: 1;
+    border-radius: 5px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
 }
 
 /* Container for timeline items */
