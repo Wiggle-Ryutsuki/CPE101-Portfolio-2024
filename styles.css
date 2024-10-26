@@ -407,6 +407,7 @@ img {
     display: flex;
     align-items: center; /* Vertically aligns the items */
     position: relative;
+    padding: 5px;
 }
 
 .wrap-icon-con p {
@@ -478,7 +479,7 @@ li {
     padding: 5px 6px;
     border-radius: 4px;
     position: absolute;
-    top: -10px;
+    top: -20px;
     right: 0;
     font-size: 11px;
     font-weight: bold;
