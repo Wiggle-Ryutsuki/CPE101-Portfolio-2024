@@ -233,6 +233,7 @@ img {
 /* Landing Section */
 
 .material-icons-outlined #location{
+    display: flex;
     font-size: 24px; /* Set the size of the icon (adjust as needed) */
     vertical-align: middle; /* Aligns the icon and text vertically */
     margin-right: 8px;
@@ -245,7 +246,6 @@ p #locate{
     margin: 0; /* Remove default margin for cleaner alignment */
     line-height: 24px; /* Match line height with the icon size */
     font-size: 16px; /* Set the desired font size for text (adjust as needed) */
-
 }
 
 
