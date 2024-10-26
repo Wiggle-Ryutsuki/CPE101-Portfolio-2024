@@ -14,20 +14,23 @@
     --light-surface-a40: #ebebf0;
     --light-surface-a50: #e6e6ec;
     /** CSS LIGHT THEME MIXED SURFACE COLORS */ 
-    --color-surface-mixed-100:  #1a1625;
-    --color-surface-mixed-200:  #2f2b3a;
-    --color-surface-mixed-300:  #46424f;
-    --color-surface-mixed-400:  #5e5a66;
-    --color-surface-mixed-500:  #76737e;
-    --color-surface-mixed-600:  #908d96;
+    --light-surface-mixed-a0: #fafafa;
+    --light-surface-mixed-a10: #f0eff4;
+    --light-surface-mixed-a20: #e6e5e9;
+    --light-surface-mixed-a30: #dbd9de;
+    --light-surface-mixed-a40: #d1ced3;
+    --light-surface-mixed-a50: #c6c3c8;
 
     /* Light Mode */
     --Background-light: var(--light-surface-a0);
     --Background-light-sec: var(--light-surface-a10);
+
     --Accent-color-light: var(--color-primary-a20);
     --Accent-color-light-sec: var(--color-primary-a50);
+
     --Text-color: var(var(--color-surface-100));
     --Text-color-sec: var(var(--color-surface-100));
+    
     --Header-Text-color: var(--color-surface-400);
     --Header-Text-color-hover: var(--color-surface-100);
 
