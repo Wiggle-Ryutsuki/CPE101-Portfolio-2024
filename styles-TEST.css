@@ -214,34 +214,34 @@ div {
   }
   
   .triangle-container-left, .triangle-container-right {
-    position: relative;
-    display: inline-block;
-    width: 0;
-    height: 0;
+    position: relative !important;
+    display: inline-block !important;
+    width: 0 !important;
+    height: 0 !important;
 }
 /* Add arrows to the left container (pointing right) */
 /*facing right*/
 .triangle-left {
-    position: absolute;
-    left: 50px; /* Adjust to position the triangle */
-    top: 15px; /* Adjust based on your design */
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-left: 15px solid var(--Accent-color-light); /* Color of the triangle */
-    border-bottom: 10px solid transparent;
+    position: absolute !important;
+    left: 50px !important; /* Adjust to position the triangle */
+    top: 15px !important; /* Adjust based on your design */
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 10px solid transparent !important;
+    border-left: 15px solid var(--Accent-color-light) !important; /* Color of the triangle */
+    border-bottom: 10px solid transparent !important;
 }
 
 /* Right Triangle facing left*/
 .triangle-right {
-    position: absolute;
-    left: -20px; /* Adjust to position the triangle */
-    top: 15px; /* Adjust based on your design */
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-right: 20px solid #555;
-	border-bottom: 10px solid transparent;
+    position: absolute !important;
+    left: -20px !important; /* Adjust to position the triangle */
+    top: 15px !important; /* Adjust based on your design */
+	width: 0 !important;
+	height: 0 !important;
+	border-top: 10px solid transparent !important;
+	border-right: 15px solid #555 !important;
+	border-bottom: 10px solid transparent !important;
 }
   
   /* Fix the circle for containers on the right side */
