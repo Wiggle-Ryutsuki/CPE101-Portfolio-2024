@@ -87,50 +87,7 @@ body {
     color: var(--Text-light);
     cursor: default;
 }
-.wrap-icons {
-    display: flex; /* Aligns children (icon and text) in a row */
-    align-items: center; /* Centers them vertically */
-}
 
-.wrap-icons p {
-    margin-left: 10px; /* Remove default margin */
-    font-size: 16px; /* Set the desired font size for text */
-}
-
-.wrap-icons svg {
-    color: var(--Text-light)
-}
-
-.wrap-email {
-    display: flex; /* Align email text and icon in a row */
-    align-items: center; /* Vertically centers them */
-}
-
-.wrap-email p {
-    margin-right: 5px; /* Space between text and icon */
-    margin-left: 10px; /* Space from the left */
-    font-size: 16px; /* Text size */
-}
-
-
-a{
-    cursor: pointer;
-    text-decoration: none; /* Remove underline from link */
-    color: inherit; /* Inherit color from parent element */
-}
-
-ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    margin-left: 30px;
-}
-
-/* Style for list items */
-li {
-    margin: 0; /* Remove margin from list items */
-    padding: 5px 0; /* Adjust padding for space between items */
-}
 
 .wrapper-container {
     text-align: center; /* Center the .titles container within its parent */
@@ -418,4 +375,59 @@ img {
 
 .descript{
     text-align: center;
+}
+
+
+
+
+.wrap-icons {
+    display: flex; /* Aligns children (icon and text) in a row */
+    align-items: center; /* Centers them vertically */
+}
+
+.wrap-icons p {
+    margin-left: 10px; /* Remove default margin */
+    font-size: 18px; /* Set the desired font size for text */
+    font-weight: bold;
+}
+
+.wrap-icons svg {
+    color: var(--Text-light)
+}
+
+.wrap-email {
+    display: flex; /* Align email text and icon in a row */
+    align-items: center; /* Vertically centers them */
+}
+
+.wrap-email p {
+    margin-right: 5px; /* Space between text and icon */
+    margin-left: 10px; /* Space from the left */
+    font-size: 16px; /* Text size */
+}
+
+
+a{
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from parent element */
+}
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    margin-left: 30px;
+}
+
+/* Style for list items */
+li {
+    margin: 5px 0;/* Remove margin from list items */
+    padding: 5px 0; /* Adjust padding for space between items */
+}
+
+
+.wrap-email svg {
+    width: 20px; /* Icon size for email */
+    height: 20px; /* Icon size for email */
 }
