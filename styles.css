@@ -281,7 +281,7 @@ img {
   .timeline .timeline-content {
     padding: 20px;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--Header-text-light-hover);
     position: relative;
     z-index: 2;
   }
