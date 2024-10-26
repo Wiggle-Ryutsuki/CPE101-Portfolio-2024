@@ -221,7 +221,7 @@ div {
     top: 20px; /* Adjust this value to align with your circles */
     width: 0;
     z-index: 1; /* Ensure it's above other content */
-    right: 25px; /* Position it just outside the left timeline content */
+    right: 1px; /* Position it just outside the left timeline content */
     border: 10px solid transparent; /* Use transparent border for consistent size */
     border-right-color: white; /* Change to match your container color */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
@@ -235,7 +235,7 @@ div {
     top: 20px; /* Adjust this value to align with your circles */
     width: 0;
     z-index: 1; /* Ensure it's above other content */
-    left: 25px; /* Position it just outside the right timeline content */
+    left: 1px; /* Position it just outside the right timeline content */
     border: 10px solid transparent; /* Use transparent border for consistent size */
     border-left-color: white; /* Change to match your container color */
     box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
