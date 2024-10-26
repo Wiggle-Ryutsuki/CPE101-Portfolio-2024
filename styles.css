@@ -381,10 +381,9 @@ img {
 
 /* Contact styles*/
 
-.contact .container {
+.contact .container > div{
     display: flex; /* Enables flexbox */
     align-items: center; /* Centers items vertically */
-    padding: 0px; /* Adjust padding as needed */
     margin: 0; /* Remove margins to avoid unwanted spacing */
     width: 100%; /* Set a width or max-width if needed */
     max-width: 1200px; /* Optional: Limit max width to prevent wrapping */
