@@ -391,6 +391,7 @@ img {
     align-items: center; /* Centers them vertically */
     margin: 0;
     padding-bottom: 0;
+    padding-top:5px;
 }
 
 .wrap-icons p {
