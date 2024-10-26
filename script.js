@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tooltipPhone.classList.add("show");
             setTimeout(() => {
                 tooltipPhone.classList.remove("show");
-            }, 1500);
+            }, 800);
         }).catch(err => {
             console.error("Failed to copy: ", err);
         });
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tooltipEmail1.classList.add("show");
             setTimeout(() => {
                 tooltipEmail1.classList.remove("show");
-            }, 1500);
+            }, 800);
         }).catch(err => {
             console.error("Failed to copy: ", err);
         });
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tooltipEmail2.classList.add("show");
             setTimeout(() => {
                 tooltipEmail2.classList.remove("show");
-            }, 1500);
+            }, 800);
         }).catch(err => {
             console.error("Failed to copy: ", err);
         });
