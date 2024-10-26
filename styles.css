@@ -348,13 +348,7 @@ img {
         width: 100%;
         left: 0;
         text-align: left;
-        padding-left: 40px;
-    }
-
-    /* Adjust marker placement for mobile */
-    .timeline .container-left::before,
-    .timeline .container-right::before {
-        left: -6px;
+        padding-left: 60px;
     }
 
     /* Center the timeline on mobile */
