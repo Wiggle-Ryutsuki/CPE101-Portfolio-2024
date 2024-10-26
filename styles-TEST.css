@@ -223,7 +223,7 @@ div {
 /*facing right*/
 .triangle-left {
     position: absolute;
-    left: -15px; /* Adjust to position the triangle */
+    left: 50px; /* Adjust to position the triangle */
     top: 15px; /* Adjust based on your design */
     width: 0;
     height: 0;
@@ -234,6 +234,9 @@ div {
 
 /* Right Triangle facing left*/
 .triangle-right {
+    position: absolute;
+    left: -20px; /* Adjust to position the triangle */
+    top: 15px; /* Adjust based on your design */
 	width: 0;
 	height: 0;
 	border-top: 10px solid transparent;
