@@ -338,29 +338,6 @@ img {
 }
 
 
-@media screen and (max-width: 768px) {
-
-    .timeline::after {
-        left: 30px;
-    }
-
-    .timeline-container.left,
-    .timeline-container.right {
-        width: 100%;
-        left: 0;
-        text-align: left;
-        padding-left: 60px;
-    }
-
-    .left::after, .right::after {
-        left: 27px;
-    }
-        
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: 0%;
-    }
-}
 
 
 /* Skills Section */
@@ -522,3 +499,31 @@ li {
     color: var(--Header-text-light-hover); 
 }
 
+
+@media screen and (max-width: 768px) {
+
+    /* Timeline stuff */
+    .timeline::after {
+        left: 30px;
+    }
+
+    .timeline-container.left,
+    .timeline-container.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    .left::after, .right::after {
+        left: 27px;
+    }
+        
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+
+    /* Skills stuff*/
+    
+}
