@@ -251,7 +251,7 @@ nav ul li:not(:first-child){
 }
 
 #landing p{
-    font-size: large;
+    font-size: 30;
     margin-right: 20px;
     padding-right: 10px;
 }
@@ -265,7 +265,7 @@ nav ul li:not(:first-child){
 #landing .content .container img {
     width: 100%;
     height: auto;
-    max-width: 100%; /* Keeps image responsive */
+    max-width: 100%; 
 }
 
 /* About */ 
@@ -292,7 +292,7 @@ nav ul li:not(:first-child){
 }
 
 #about .container div{
-    font-size: 20px;;
+    font-size: 20px;
     margin-right: 20px;
     padding-right: 10px;
 }
