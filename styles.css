@@ -217,16 +217,10 @@ nav ul li:not(:first-child){
 }
 
 /* Pages */
-#landing, #contact {
-    text-align: left;
-}
 
 #about, #skills, #footer{
     background-color: var(--Background-light-sec); 
-    text-align: right;
-
 }
-
 
 
 img {
