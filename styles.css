@@ -302,6 +302,25 @@ nav ul li:not(:first-child){
     max-width: 100%; /* Keeps image responsive */
 }
 
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the columns */
+    padding: 20px;
+}
+
+.hobby-list {
+    flex: 1; /* Allows columns to adjust based on screen size */
+}
+
+.hobby-list ul {
+    padding: 0;
+}
+
+.hobby-list li {
+    margin-bottom: 10px;
+}
+
 /* Education Section*/
 #education {
     width: 100%;
