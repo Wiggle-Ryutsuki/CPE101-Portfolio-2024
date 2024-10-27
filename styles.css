@@ -525,6 +525,15 @@ li {
     }
 
     /* Skills stuff*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .skill-container {
+        width: 100%;
+        max-width: 400px; /* Optional: limit width for a better look on smaller screens */
+    }
 
 }
