@@ -110,7 +110,7 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 45px;
 }
 
 div {
@@ -236,6 +236,16 @@ nav a:focus-within {
 nav ul li:not(:first-child){
     margin-left: 20px;
 }
+
+/* Landing */
+#landing {
+    display: flex;
+}
+#landing p{
+    font-size: larger;
+}
+
+/* About */ 
 
 /* Education Section*/
 #education {
