@@ -152,8 +152,6 @@ div {
     background-color: var(--Background-light-sec); 
 }
 
-
-
 #landing img {
     float: right;
 }
@@ -245,7 +243,6 @@ nav ul li:not(:first-child){
 
 #landing .content .container > div:first-child {
     flex: 1.5;
-    padding-right: 15px;
 }
 
 #landing .content .container > div:last-child {
@@ -255,6 +252,8 @@ nav ul li:not(:first-child){
 
 #landing p{
     font-size: large;
+    margin-right: 20px;
+    padding-right: 10px;
 }
 
 #landing .content .container img {
