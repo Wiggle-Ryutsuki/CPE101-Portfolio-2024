@@ -430,6 +430,11 @@ nav ul li:not(:first-child){
     text-align: center;
 }
 
+.single-skill p{
+    font-size: 15px;
+    text-align: right;
+}
+
 /* Contact styles*/
 
 #contact .container > div {
