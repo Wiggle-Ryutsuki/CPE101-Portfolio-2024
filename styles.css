@@ -229,6 +229,14 @@ img {
     float: right;
 }
 
+#landing img {
+    float: right;
+}
+
+#about img {
+    float: left;
+}
+
 /* Landing Section */
 
 
