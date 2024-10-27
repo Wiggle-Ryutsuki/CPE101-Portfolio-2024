@@ -285,7 +285,7 @@ nav ul li:not(:first-child){
     max-width: 500px;
 }
 
-#about p{
+#about .container p{
     font-size:20px;
     margin-right: 20px;
     padding-right: 10px;
