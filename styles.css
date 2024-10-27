@@ -170,7 +170,7 @@ header.scrolled {
 .separator {
     height: 24px; 
     width: 1px;
-    background-color: #d1d5db; /*EDIT IF NEEDED*/
+    background-color: var(--Header-text-light-hover); /*EDIT IF NEEDED*/
     margin-left: 20px;
 }
 
