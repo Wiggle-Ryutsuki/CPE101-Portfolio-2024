@@ -429,21 +429,21 @@ nav ul li:not(:first-child){
 /* Contact styles*/
 
 #contact .container > div {
-    flex: 1; /* Make each column take equal width */
+    flex: 1; 
     margin: 0 30px;
 }
 
 .wrap-icons {
-    display: flex; /* Aligns children (icon and text) in a row */
-    align-items: center; /* Centers them vertically */
+    display: flex; 
+    align-items: center; 
     margin: 0;
     padding-bottom: 0;
     padding-top:5px;
 }
 
 .wrap-icons p {
-    margin-left: 10px; /* Remove default margin */
-    font-size: 18px; /* Set the desired font size for text */
+    margin-left: 10px; 
+    font-size: 18px; 
     font-weight: bold;
 }
 
@@ -453,17 +453,17 @@ nav ul li:not(:first-child){
 
 .wrap-icon-con {
     display: flex;
-    align-items: center; /* Vertically aligns the items */
+    align-items: center;
     position: relative;
     padding: 5px;
 }
 
 .wrap-icon-con p {
-    margin: 0; /* Removes default paragraph margin */
+    margin: 0; 
 }
 
 .wrap-icon-con svg {
-    cursor: pointer; /* Optional: changes cursor to pointer on hover */
+    cursor: pointer; 
     color: var(--Text-light);
     margin-left: 10px;
     transition: 0.3s;
