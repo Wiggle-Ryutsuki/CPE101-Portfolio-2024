@@ -525,18 +525,5 @@ li {
     }
 
     /* Skills stuff*/
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skill-container {
-        width: 100%;
-    }
-
-    .skill-container.right {
-        left: 0%;
-    }
 
 }
