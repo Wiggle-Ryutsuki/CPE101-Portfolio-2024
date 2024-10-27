@@ -251,13 +251,13 @@ nav ul li:not(:first-child){
 }
 
 #landing p{
-    font-size: 30;
+    font-size: 25px;
     margin-right: 20px;
     padding-right: 10px;
 }
 
 #landing .container div{
-    font-size: large;
+    font-size: 40px;
     margin-right: 20px;
     padding-right: 10px;
 }
@@ -294,7 +294,7 @@ nav ul li:not(:first-child){
     margin-right: 20px;
     padding-right: 10px;
 }
-#about p{
+#about .content div{
     font-size: 20px;
 }
 
