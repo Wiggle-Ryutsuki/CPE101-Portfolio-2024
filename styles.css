@@ -256,6 +256,12 @@ nav ul li:not(:first-child){
     padding-right: 10px;
 }
 
+#landing .container div{
+    font-size: large;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
 #landing .content .container img {
     width: 100%;
     height: auto;
@@ -263,6 +269,39 @@ nav ul li:not(:first-child){
 }
 
 /* About */ 
+
+#about .content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about .content .container > div:second-child {
+    flex: 1.5;
+}
+
+#about .content .container > div:first-child {
+    flex: 1; 
+    max-width: 500px;
+}
+
+#about p{
+    font-size:20px;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+#about .container div{
+    font-size: large;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+#about .content .container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Keeps image responsive */
+}
 
 /* Education Section*/
 #education {
