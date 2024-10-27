@@ -533,7 +533,10 @@ li {
 
     .skill-container {
         width: 100%;
-        max-width: 400px; /* Optional: limit width for a better look on smaller screens */
+    }
+
+    .skill-container.right {
+        left: 0%;
     }
 
 }
