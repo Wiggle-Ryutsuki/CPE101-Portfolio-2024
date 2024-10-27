@@ -35,3 +35,7 @@ The portfolio should be built using the following:
 - HTML/CSS: The primary structure and design of the website.
 
 - JavaScript: Used to add interactivity and enhance the user experience in the challenges.
+
+## Due Date
+
+Tuesday, October 29, 2024
