@@ -240,9 +240,6 @@ nav ul li:not(:first-child){
 }
 
 /* Landing */
-#landing .container{
-    display: flex;
-}
 
 #landing p{
     font-size: larger;
