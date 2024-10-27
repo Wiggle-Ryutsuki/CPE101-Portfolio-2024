@@ -398,6 +398,10 @@ nav ul li:not(:first-child){
     padding: 5px;
 }
 
+.timeline-content p{
+    font-size: 17px;
+}
+
 /* Skills Section */
 
 .myProgress {
