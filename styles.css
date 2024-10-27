@@ -152,11 +152,7 @@ div {
     background-color: var(--Background-light-sec); 
 }
 
-img {
-    width: 500px;
-    height: auto;
-    float: right;
-}
+
 
 #landing img {
     float: right;
@@ -241,8 +237,30 @@ nav ul li:not(:first-child){
 
 /* Landing */
 
+#landing .content .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#landing .content .container > div:first-child {
+    flex: 1.5;
+    padding-right: 15px;
+}
+
+#landing .content .container > div:last-child {
+    flex: 1; 
+    max-width: 500px;
+}
+
 #landing p{
-    font-size: larger;
+    font-size: large;
+}
+
+#landing .content .container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Keeps image responsive */
 }
 
 /* About */ 
