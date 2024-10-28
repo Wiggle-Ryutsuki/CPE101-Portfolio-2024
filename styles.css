@@ -236,6 +236,8 @@ nav ul li:not(:first-child){
 .menu-container{
     padding: 0;
     margin: 0;
+    position: relative;
+    display: inline-block;
 }
 
 .menu-container button{
