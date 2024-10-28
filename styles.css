@@ -335,8 +335,9 @@ nav a {
     
 }
 
-nav a.active {
-    color: var(--accent-color); /* Use your preferred highlight color */
+.desktop-header a.active {
+    color: var(--accent-color);
+    font-weight: bold;
 }
 
 nav a:hover {
