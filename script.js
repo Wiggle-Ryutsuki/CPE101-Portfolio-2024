@@ -130,33 +130,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const themeToggle = document.getElementById('theme-toggle');
+    const themeToggle = document.querySelector('.switch input[type="checkbox"]');
 
     // Function to switch theme
     function toggleTheme() {
-        const isDarkMode = themeToggle.checked;
+        const isDarkMode = themeToggle.checked; // Check if the checkbox is checked
+        document.body.classList.toggle('dark-theme', isDarkMode);
+        document.body.classList.toggle('light-theme', !isDarkMode);
     
-        // Toggle between dark and light theme
-        if (isDarkMode) {
-            document.body.classList.remove('light-theme');
-            document.body.classList.add('dark-theme');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            document.body.classList.remove('dark-theme');
-            document.body.classList.add('light-theme');
-            localStorage.setItem('theme', 'light');
-        }
+        // Save the current theme in localStorage
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
     }
     
     // Load theme from localStorage on page load
     function loadTheme() {
         const savedTheme = localStorage.getItem('theme') || 'light';
-    
-        // Set checkbox state based on the theme
-        themeToggle.checked = savedTheme === 'dark';
-        
-        // Apply the correct theme class
-        document.body.classList.add(`${savedTheme}-theme`);
+        if (savedTheme === 'dark') {
+            themeToggle.checked = true; // Set the checkbox to checked
+            document.body.classList.add('dark-theme');
+        } else {
+            document.body.classList.add('light-theme');
+        }
     }
     
     // Event listener for checkbox change
@@ -164,6 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Load the theme when the page loads
     document.addEventListener('DOMContentLoaded', loadTheme);
+    
     
 
 });
