@@ -142,7 +142,7 @@ div {
 }
 
 .content {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -645,6 +645,9 @@ a:hover{
 
 
 @media screen and (max-width: 768px) {
+    .content{
+        display: flex;
+    }
     .desktop-header {
         display: none; 
     }
