@@ -244,9 +244,13 @@ nav ul li:not(:first-child){
     border: none;
     padding: 10px 20px;
     background: none;    /*EDIT IF NEEDED*/
-    color: var(--Accent-color-light);
+    color: var(--Header-text-light);
     text-align: center;
     cursor: pointer;
+}
+
+.menu-container button:hover{
+    color: var(--Accent-color-light);
 }
 
 .dropdown-menu {
