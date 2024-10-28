@@ -757,10 +757,12 @@ a:hover{
 
     .desktop-header {
         display: none; 
+        width: 100%;
     }
 
     .mobile-header {
         display: block; 
+        width: 100%;
     }
 
     /* Timeline stuff */
