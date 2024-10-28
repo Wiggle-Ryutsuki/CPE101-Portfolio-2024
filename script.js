@@ -130,39 +130,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const themeButton = document.getElementById('themes');
+    const themeToggle = document.getElementById('theme-toggle');
 
     // Function to switch theme
     function toggleTheme() {
-        const isDarkMode = document.body.classList.contains('dark-theme');
-        
+        const isDarkMode = themeToggle.checked;
+
         // Toggle between dark and light theme
         if (isDarkMode) {
-            document.body.classList.remove('dark-theme');
-            document.body.classList.add('light-theme');
-            localStorage.setItem('theme', 'light');
-        } else {
             document.body.classList.remove('light-theme');
             document.body.classList.add('dark-theme');
             localStorage.setItem('theme', 'dark');
+        } else {
+            document.body.classList.remove('dark-theme');
+            document.body.classList.add('light-theme');
+            localStorage.setItem('theme', 'light');
         }
     }
-    
+
     // Load theme from localStorage on page load
     function loadTheme() {
         const savedTheme = localStorage.getItem('theme') || 'light';
-    
-        // Ensure only the correct theme is applied on load
+
+        // Set checkbox state based on the theme
+        themeToggle.checked = savedTheme === 'dark';
+        
+        // Apply the correct theme class
         document.body.classList.remove('light-theme', 'dark-theme');
         document.body.classList.add(`${savedTheme}-theme`);
     }
-    
-    // Event listener for button click
-    themeButton.addEventListener('click', toggleTheme);
-    
+
+    // Event listener for checkbox change
+    themeToggle.addEventListener('change', toggleTheme);
+
     // Load the theme when the page loads
     document.addEventListener('DOMContentLoaded', loadTheme);
-    
 
-    
 });
