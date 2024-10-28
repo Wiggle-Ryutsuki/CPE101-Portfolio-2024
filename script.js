@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Listener for header to scroll and hover
+    const desktopHeader = document.getElementById("")
     window.addEventListener('scroll', () => {
         const header = document.querySelector('header');
         if (window.scrollY > 0) {
