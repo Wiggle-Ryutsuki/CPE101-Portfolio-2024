@@ -63,13 +63,13 @@
     --dark-primary-text: #ffffff;
 
     /* Dark Mode Colors*/
-    --Background-dark: var(--dark-surface-mixed-a0);
-    --Background-dark-sec: var(--dark-surface-mixed-a10);
+    --Background-dark: var(--dark-surface-mixed-a10);
+    --Background-dark-sec: var(--dark-surface-mixed-a0);
     --Accent-dark: var(--dark-primary-a0); /*Switch to second last primary*/
     --Accent-dark-sec: var(--dark-primary-a20); /*Switch to last primary*/
     --Text-dark: var(--dark-primary-text);
     --Text-dark-sec: ;
-    --Header-text-dark: ;
+    --Header-text-dark: var(--dark-primary-text);
     --Header-text-dark-hover: ;
 
     
