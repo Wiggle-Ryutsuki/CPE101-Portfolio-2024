@@ -249,6 +249,10 @@ nav ul li:not(:first-child){
     cursor: pointer;
 }
 
+.menu-container svg{
+    font-size: 20px;
+}
+
 .menu-container button:hover{
     color: var(--Accent-color-light);
 }
