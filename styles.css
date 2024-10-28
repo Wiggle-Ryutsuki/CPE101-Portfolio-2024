@@ -69,8 +69,8 @@
     --Accent-dark-sec: var(--dark-primary-a20); /*Switch to last primary*/
     --Text-dark: var(--dark-primary-text);
     --Text-dark-sec: ;
-    --Header-text-dark: var(--dark-primary-text);
-    --Header-text-dark-hover: ;
+    --Header-text-dark: var(--dark-surface-mixed-a50);
+    --Header-text-dark-hover: var(--dark-surface-mixed-a50);
 
     
 }
