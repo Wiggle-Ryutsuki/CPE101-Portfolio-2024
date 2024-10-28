@@ -605,15 +605,23 @@ a:hover{
         left: 0%;
     }
 
-    /* Skills stuff*/
+    /* Skills section */
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .skill-container.left{
+    /* Ensure both skill containers stack and fill available space */
+    .skill-container.left,
+    .skill-container.right {
         width: 100%;
+    }
+
+    /* Adjust each skill bar to stretch across the container */
+    .single-skill {
+        width: 90%; /* Or another value to create desired spacing */
+        margin-bottom: 10px;
     }
 
 }
