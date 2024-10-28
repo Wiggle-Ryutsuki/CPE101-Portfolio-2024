@@ -749,10 +749,6 @@ a:hover{
 /* Media Queries */
 @media (max-width: 768px) {
     /* overall body */
-    .container{
-        display: flex;
-        padding: 20px;
-    }
 
     .desktop-header {
         display: none; 
@@ -761,11 +757,7 @@ a:hover{
     .mobile-header {
         display: block; 
     }
-
-    nav ul {
-        flex-direction: column; /* Stack menu items vertically */
-    }
-
+    
     nav ul li {
         margin-left: 0; /* Remove left margin */
         margin-bottom: 10px; /* Add space between items */
