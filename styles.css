@@ -110,7 +110,7 @@ body {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: clamp(2rem, 4vw + 1rem, 6rem); /* Adapts between 2rem and 6rem based on viewport width */
     margin-top: 0;
     padding-top: 0;
 }
@@ -679,11 +679,5 @@ a:hover{
     /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 28px; /* Further adjust heading size for very small screens */
     }
 }
