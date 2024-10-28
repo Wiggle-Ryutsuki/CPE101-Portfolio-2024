@@ -176,6 +176,10 @@ header {
     font-style: normal;
 }
 
+.desktop-header, .mobile-header{
+    padding: 0;
+    margin: 0;
+}
 /* Desktop Header */
 .desktop-header {
     display: block; /* Show desktop header by default */
