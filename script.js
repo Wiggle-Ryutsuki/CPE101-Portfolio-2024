@@ -29,34 +29,37 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('change', toggleTheme);
     loadTheme();
 
+
     const sections = document.querySelectorAll('div[id]');
-    const navLinks = document.querySelectorAll('nav a');
+    const navLinks = document.querySelectorAll('.desktop-header a');
+    const header = document.querySelector('.desktop-header');
+    const headerOffset = header.offsetHeight;
 
     window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
-        const headerOffset = header.offsetHeight;
+        let currentSectionId = null;
 
-        // Add 'scrolled' class to header if window is scrolled
-        if (window.scrollY > 0) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-
-        // Loop through each section to check which is in view
+        // Loop through each section to check if it's in view
         sections.forEach((section, index) => {
-            const sectionTop = section.getBoundingClientRect().top;
-            
-            // Check if the section is in view with a small offset
-            if (sectionTop <= headerOffset + 50 && sectionTop + section.offsetHeight > headerOffset + 50) {
-                // Remove 'active' from all nav links
-                navLinks.forEach(link => link.classList.remove('active'));
+            const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+            const sectionBottom = sectionTop + section.offsetHeight;
 
-                // Add 'active' to the current link
-                navLinks[index].classList.add('active');
+            // Check if section is in view with the header offset
+            if (window.scrollY >= sectionTop - headerOffset && window.scrollY < sectionBottom - headerOffset) {
+                currentSectionId = section.id;
+            }
+        });
+
+        // Update active link based on the current section in view
+        navLinks.forEach(link => {
+            if (link.getAttribute('href').substring(1) === currentSectionId) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
             }
         });
     });
+
+    
 
 
     // Scroll to section
