@@ -642,7 +642,7 @@ a:hover{
 
     /* Adjust each skill bar to stretch across the container */
     .single-skill {
-        width: 90%; /* Or another value to create desired spacing */
+        width: 100%; /* Or another value to create desired spacing */
         margin-bottom: 10px;
     }
 
