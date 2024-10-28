@@ -156,7 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.checked = savedTheme === 'dark';
         
         // Apply the correct theme class
-        document.body.classList.remove('light-theme', 'dark-theme');
         document.body.classList.add(`${savedTheme}-theme`);
     }
     
