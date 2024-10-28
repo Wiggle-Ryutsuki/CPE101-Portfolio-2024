@@ -20,11 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load theme from localStorage on page load
     function loadTheme() {
         const savedTheme = localStorage.getItem('theme') || 'light';
+        console.log("CHECKED STORAGE");
         if (savedTheme === 'dark') {
             themeToggle.checked = true; // Set the checkbox to checked
             document.body.classList.add('dark-theme');
+            console.log("CHANGED TO DARK");
         } else {
             document.body.classList.add('light-theme');
+            console.log("CHANGED TO LIGHT");
         }
     }
 
