@@ -234,9 +234,12 @@ nav ul li:not(:first-child){
 }
 
 .dropdown-menu {
-    display: none;
+    display: show;
 }
 
+.dropdown-menu.show {
+    display: block;
+}
 /* Landing */
 
 #landing .content .container {
