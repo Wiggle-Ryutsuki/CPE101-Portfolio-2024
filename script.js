@@ -27,16 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const menuButton = document.getElementById("menuButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
 
     // Toggle dropdown on menu button click
     menuButton.addEventListener("click", () => {
-        dropdownMenu.classList.add("show-menu");
+        dropdownMenu.classList.toggle("show-menu");
     });
 
     // Close the dropdown if clicked outside
     window.addEventListener("click", (e) => {
         if (!e.target.closest("#menuButton") && !e.target.closest("#dropdownMenu")) {
-            document.getElementById("dropdownMenu").classList.remove("show");
+            dropdownMenu.classList.remove("show-menu");
         }
     });
 
