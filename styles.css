@@ -125,7 +125,7 @@ div {
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
-    padding: 20px;
+    
 }
 
 .container > div {
@@ -649,6 +649,7 @@ a:hover{
 @media (max-width: 768px) {
     .container{
         display: flex;
+        padding: 20px;
     }
 
     .desktop-header {
