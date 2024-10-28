@@ -647,15 +647,9 @@ a:hover{
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack elements on small screens */
-        align-items: center;
+    .container{
+        display: flex;
     }
-
-    h1 {
-        font-size: 36px; /* Adjust heading size */
-    }
-
 
     .desktop-header {
         display: none; 
@@ -663,6 +657,28 @@ a:hover{
 
     .mobile-header {
         display: block; 
+    }
+
+    /* Timeline stuff */
+    .timeline::after {
+        left: 30px;
+    }
+
+    .timeline-container.left,
+    .timeline-container.right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    .left::after, .right::after {
+        left: 27px;
+    }
+        
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
     }
 }
 
