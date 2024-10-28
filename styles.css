@@ -792,8 +792,6 @@ a:hover{
 }
 
 
-
-
 /* Base hidden state */
 .fade-in, .pop-in, .fade-left {
     opacity: 0;
@@ -823,6 +821,5 @@ a:hover{
 .fade-left.fade-left-visible {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
