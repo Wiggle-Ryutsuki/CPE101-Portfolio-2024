@@ -25,12 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
     });
-    
-    toggleMenu();
-    function toggleMenu() {
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuButton = document.getElementById("menuButton");
         const dropdownMenu = document.getElementById("dropdownMenu");
-        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-    }
+
+        menuButton.addEventListener("click", () => {
+            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+        });
+    });
 
     // Function to animate progress bars
     let hasScrolled = false; // Boolean variable to track if the section has been scrolled into view
