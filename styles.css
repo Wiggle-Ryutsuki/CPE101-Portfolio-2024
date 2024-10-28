@@ -194,7 +194,7 @@ header.scrolled {
 
 .separator {
     height: 24px; 
-    width: 1px;
+    width: 2px;
     background-color: var(--Header-text-light-hover); /*EDIT IF NEEDED*/
     margin-left: 20px;
 }
@@ -642,7 +642,7 @@ a:hover{
     .desktop-header {
         display: none; 
     }
-    
+
     .mobile-header {
         display: block; 
     }
@@ -679,10 +679,6 @@ a:hover{
         flex-direction: column;
         align-items: center;
     }
-
-    /* Ensure both skill containers stack and fill available space */
-    /* Make both skill containers responsive */
-
 
     /* Adjust each skill bar to stretch across the container */
     .single-skill {
