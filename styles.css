@@ -790,3 +790,14 @@ a:hover{
         font-size: 28px; /* Further adjust heading size for very small screens */
     }
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px); /* Start 40px lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+}
