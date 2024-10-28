@@ -120,7 +120,7 @@ body {
 
     margin: 0;
     padding: 0;
-    background-color: var(--Background-light);
+    background-color: var(--background);
     color: var(--Text-light);
     cursor: default;
 }
@@ -188,7 +188,7 @@ div {
 /* Pages */
 
 #about, #skills, #footer{
-    background-color: var(--Background-light-sec); 
+    background-color: var(--background-sec); 
 }
 
 #landing img {
@@ -204,7 +204,7 @@ div {
 header {
     position: sticky;
     top: 0;
-    background-color: var(--Background-light);
+    background-color: var(--background);
     z-index: 5;
     padding: 5px;
     transition: background-color 0.5s, box-shadow 0.5s;
@@ -231,7 +231,7 @@ header {
 }
 
 header.scrolled {
-    background-color: var(--Background-light);
+    background-color: var(--background);
     border-bottom: 1px solid rgba(197, 197, 197, 0.5); 
     box-shadow: 0px 15.213px 30px 0px var(--Header-text-light-hover); 
 }
@@ -645,7 +645,7 @@ a:hover{
     visibility: hidden;
     opacity: 0;
     background-color: var(--Accent-color-light-sec);
-    color: var(--Background-light);
+    color: var(--background);
     text-align: center;
     padding: 5px 6px;
     border-radius: 4px;
