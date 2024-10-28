@@ -251,7 +251,7 @@ nav ul li:not(:first-child){
     text-align: left;
 }
 
-.show {
+.show-menu {
     display: block;
 }
 /* Landing */

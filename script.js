@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle dropdown on menu button click
     menuButton.addEventListener("click", () => {
-        dropdownMenu.classList.toggle("show");
+        dropdownMenu.classList.add("show-menu");
     });
 
     // Close the dropdown if clicked outside
