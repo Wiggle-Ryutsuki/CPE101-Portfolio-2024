@@ -2,7 +2,7 @@
 
 ## Assignment: Personal Website Portfolio
 
-### LINK: [Wiggle-Ryutsuki.github.io](Wiggle-Ryutsuki.github.io)
+### LINK: [https://wiggle-ryutsuki.github.io](https://wiggle-ryutsuki.github.io)
 
 ### Objective
 
