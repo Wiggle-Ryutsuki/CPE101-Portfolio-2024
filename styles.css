@@ -648,8 +648,6 @@ a:hover{
 @media screen and (max-width: 768px) {
     .content{
         display: flex;
-        width: 100%; /* Full width stacking */
-        position: relative; /* Reset positioning */
     }
 
     .desktop-header {
