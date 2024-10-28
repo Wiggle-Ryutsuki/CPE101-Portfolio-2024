@@ -132,7 +132,7 @@ body {
 .titles {
     display: inline-block;
     text-align: center;
-    background-color: var(--Accent-color-light-sec);
+    background-color: var(--accent-color-sec);
     color: var(--Text-light-sec); /* EDIT IT NEEDED*/
     padding: 4px 12px; 
     border-radius: 50px; 
@@ -259,7 +259,7 @@ nav ul li:first-child {
 button {
     border: none;
     border-radius: 10px;
-    color: var(--Accent-color-light-sec); /*EDIT IF NEEDED*/
+    color: var(--accent-color-sec); /*EDIT IF NEEDED*/
     padding: 10px 20px;
     text-align: center;
     cursor: pointer;
@@ -276,11 +276,11 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--Accent-color-light);
+    color: var(--accent-color);
 }
 
 nav a:focus-within {
-    color: var(--Accent-color-light);
+    color: var(--accent-color);
 }
 
 nav ul li:not(:first-child){
@@ -309,7 +309,7 @@ nav ul li:not(:first-child){
 }
 
 .menu-container button:hover{
-    color: var(--Accent-color-light);
+    color: var(--accent-color);
 }
 
 .dropdown-menu {
@@ -442,7 +442,7 @@ nav ul li:not(:first-child){
     content: '';
     position: absolute;
     width: 4px;
-    background-color: var(--Accent-color-light-sec);
+    background-color: var(--accent-color-sec);
     border-radius: 5px;
     top: 0;
     bottom: 0;
@@ -473,8 +473,8 @@ nav ul li:not(:first-child){
     width: 12px;
     height: 12px;
     margin-left: -6px;
-    background-color: var(--Accent-color-light);
-    border: 3px solid var(--Accent-color-light-sec);
+    background-color: var(--accent-color);
+    border: 3px solid var(--accent-color-sec);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -529,7 +529,7 @@ nav ul li:not(:first-child){
 
 .myProgress {
     width: 100%;
-    background-color: var(--Accent-color-light-sec);
+    background-color: var(--accent-color-sec);
     border: 3px solid var(--Header-text-light-hover);
     border-radius: 10px;
     overflow: hidden;
@@ -542,7 +542,7 @@ nav ul li:not(:first-child){
     width: 1%;
     height: 100%;
     border-radius: 10px;
-    background-color: var(--Accent-color-light);
+    background-color: var(--accent-color);
     padding: 0;
     margin: 0;
     transition: 0.5s;
@@ -602,7 +602,7 @@ nav ul li:not(:first-child){
 }
 
 .wrap-icon-con svg:hover{
-    color: var(--Accent-color-light)
+    color: var(--accent-color)
 }
 
 a{
@@ -613,7 +613,7 @@ a{
 }
 
 a:hover{
-    color: var(--Accent-color-light)
+    color: var(--accent-color)
 }
 
 .wrap-icons div{
@@ -644,7 +644,7 @@ a:hover{
 .tooltip {
     visibility: hidden;
     opacity: 0;
-    background-color: var(--Accent-color-light-sec);
+    background-color: var(--accent-color-sec);
     color: var(--background);
     text-align: center;
     padding: 5px 6px;
