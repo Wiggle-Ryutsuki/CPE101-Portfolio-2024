@@ -763,6 +763,19 @@ a:hover{
         display: block; 
     }
 
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    .menu-container {
+        width: 100%; /* Ensure button takes full width */
+    }
+
     /* Timeline stuff */
     .timeline::after {
         left: 30px;
