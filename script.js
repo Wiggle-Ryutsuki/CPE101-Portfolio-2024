@@ -134,18 +134,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to switch theme
     function toggleTheme() {
-        const isDarkMode = document.body.classList.toggle('dark-theme');
-        document.body.classList.toggle('light-theme', !isDarkMode);
-    
-        // Save the current theme in localStorage
-        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        const isDarkMode = document.body.classList.contains('dark-theme');
+        
+        // Toggle between dark and light theme
+        if (isDarkMode) {
+            document.body.classList.remove('dark-theme');
+            document.body.classList.add('light-theme');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.body.classList.remove('light-theme');
+            document.body.classList.add('dark-theme');
+            localStorage.setItem('theme', 'dark');
+        }
     }
     
     // Load theme from localStorage on page load
     function loadTheme() {
         const savedTheme = localStorage.getItem('theme') || 'light';
     
-        // Ensure only the correct theme is applied
+        // Ensure only the correct theme is applied on load
         document.body.classList.remove('light-theme', 'dark-theme');
         document.body.classList.add(`${savedTheme}-theme`);
     }
@@ -155,6 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Load the theme when the page loads
     document.addEventListener('DOMContentLoaded', loadTheme);
+    
 
     
 });
