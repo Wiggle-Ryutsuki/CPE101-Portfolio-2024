@@ -182,6 +182,7 @@ div {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
+    display: flex;
 }
 
 .switch {
@@ -757,7 +758,7 @@ a:hover{
     .mobile-header {
         display: block; 
     }
-    
+
     nav ul li {
         margin-left: 0; /* Remove left margin */
         margin-bottom: 10px; /* Add space between items */
