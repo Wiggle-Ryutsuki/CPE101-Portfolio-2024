@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const themeToggle = document.querySelector('.switch input[type="checkbox"]');
+
+    // Function to switch theme
+    function toggleTheme() {
+        const isDarkMode = themeToggle.checked; // Check if the checkbox is checked
+        document.body.classList.toggle('dark-theme', isDarkMode);
+        document.body.classList.toggle('light-theme', !isDarkMode);
+
+        // Save the current theme in localStorage
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    }
+    // Event listener for checkbox change
+    themeToggle.addEventListener('change', toggleTheme);
+
+    // Load the theme when the page loads
+    document.addEventListener('DOMContentLoaded', loadTheme);
+
+    // Load theme from localStorage on page load
+    function loadTheme() {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            themeToggle.checked = true; // Set the checkbox to checked
+            document.body.classList.add('dark-theme');
+        } else {
+            document.body.classList.add('light-theme');
+        }
+    }
+
     // Scroll to section
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -130,34 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-const themeToggle = document.querySelector('.switch input[type="checkbox"]');
 
-// Function to switch theme
-function toggleTheme() {
-    const isDarkMode = themeToggle.checked; // Check if the checkbox is checked
-    document.body.classList.toggle('dark-theme', isDarkMode);
-    document.body.classList.toggle('light-theme', !isDarkMode);
 
-    // Save the current theme in localStorage
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-}
 
-// Load theme from localStorage on page load
-function loadTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    if (savedTheme === 'dark') {
-        themeToggle.checked = true; // Set the checkbox to checked
-        document.body.classList.add('dark-theme');
-    } else {
-        document.body.classList.add('light-theme');
-    }
-}
-
-// Event listener for checkbox change
-themeToggle.addEventListener('change', toggleTheme);
-
-// Load the theme when the page loads
-document.addEventListener('DOMContentLoaded', loadTheme);
 
     
 
