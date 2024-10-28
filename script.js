@@ -26,10 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // Event listener for checkbox change
     themeToggle.addEventListener('change', toggleTheme);
-    
-    // Load the theme when the page loads
     loadTheme();
 
     // Scroll to section
