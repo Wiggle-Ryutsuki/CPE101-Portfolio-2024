@@ -233,6 +233,10 @@ nav ul li:not(:first-child){
     margin-left: 20px;
 }
 
+.dropdown-menu {
+    display: none;
+}
+
 /* Landing */
 
 #landing .content .container {
