@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const fadeInElements = document.querySelectorAll('.fade-in');
+    const fadeInLeftElements = document.querySelectorAll('.fade-in-left');
 
     const observerOptions = {
         threshold: 0.1 // Trigger when 10% of the element is in view
@@ -183,6 +184,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    
 
 });

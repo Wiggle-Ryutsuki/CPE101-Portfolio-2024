@@ -797,7 +797,18 @@ a:hover{
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
+.fade-in-left{
+    opacity: 0;
+    transform: translateX(30px); /* Start 40px lower */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
 .fade-in-visible {
     opacity: 1;
     transform: translateY(0); /* End at normal position */
+}
+
+.fade-in-left-visible {
+    opacity: 1;
+    transform: translateZ(0); /* End at normal position */
 }
