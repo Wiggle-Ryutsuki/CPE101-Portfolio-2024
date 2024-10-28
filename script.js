@@ -31,9 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const dropdownMenu = document.getElementById("dropdownMenu");
 
         menuButton.addEventListener("click", () => {
-            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+            dropdownMenu.classList.toggle("show");
         });
     });
+
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        let myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
 
     // Function to animate progress bars
     let hasScrolled = false; // Boolean variable to track if the section has been scrolled into view
