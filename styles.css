@@ -243,9 +243,11 @@ nav ul li:not(:first-child){
 .menu-container button{
     border: none;
     padding: 10px 20px;
+    color: none; /*EDIT IF NEEDED*/
     text-align: center;
     cursor: pointer;
 }
+
 .dropdown-menu {
     display: none;
     position: absolute;

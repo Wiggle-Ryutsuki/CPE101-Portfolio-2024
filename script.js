@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const dropdownItems = dropdownMenu.querySelectorAll("a, button");
+    dropdownItems.forEach((item) => {
+        item.addEventListener("click", () => {
+            dropdownMenu.classList.remove("show-menu");
+        });
+    });
+
     // Function to animate progress bars
     let hasScrolled = false; // Boolean variable to track if the section has been scrolled into view
     const animationDuration = 1000; // Duration in milliseconds for the animation
