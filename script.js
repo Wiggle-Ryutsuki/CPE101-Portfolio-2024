@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const themeToggle = document.querySelector('.switch input[type="checkbox"]');
-
+    const themeButton = document.getElementById('theme-button');
+    
     // Function to switch theme
     function toggleTheme() {
         const isDarkMode = themeToggle.checked; // Check if the checkbox is checked
@@ -26,8 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
+    // Event listener for checkbox change
     themeToggle.addEventListener('change', toggleTheme);
+    
+    // Event listener for button click
+    themeButton.addEventListener('click', () => {
+        themeToggle.checked = !themeToggle.checked; // Toggle the checkbox
+        toggleTheme(); // Call the function to switch the theme
+    });
+    
+    // Load the theme when the page loads
     loadTheme();
+    
 
     // Scroll to section
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
