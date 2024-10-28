@@ -647,8 +647,9 @@ a:hover{
 
 @media screen and (max-width: 768px) {
     .content{
-        flex-direction: column; /* Stack text and image vertically */
-        align-items: center; /* Center items in column layout */
+        display: flex;
+        width: 100%; /* Full width stacking */
+        position: relative; /* Reset positioning */
     }
 
     .desktop-header {
