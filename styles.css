@@ -613,10 +613,8 @@ a:hover{
     }
 
     /* Ensure both skill containers stack and fill available space */
-    .skill-container.left,
-    .skill-container.right {
-        width: 100%;
-    }
+    /* Make both skill containers responsive */
+
 
     /* Adjust each skill bar to stretch across the container */
     .single-skill {
