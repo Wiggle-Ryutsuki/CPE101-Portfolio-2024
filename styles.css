@@ -169,11 +169,21 @@ header {
     z-index: 5;
     padding: 5px;
     transition: background-color 0.5s, box-shadow 0.5s;
-
+    width: 100%;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+/* Desktop Header */
+.desktop-header {
+    display: block; /* Show desktop header by default */
+}
+
+/* Mobile Header */
+.mobile-header {
+    display: none; /* Hide mobile header by default */
 }
 
 header.scrolled {
@@ -629,6 +639,13 @@ a:hover{
 
 
 @media screen and (max-width: 768px) {
+    .desktop-header {
+        display: none; /* Hide desktop header on mobile */
+    }
+    .mobile-header {
+        display: block; /* Show mobile header */
+    }
+    
     .content {
         max-width: 100%;
     }
