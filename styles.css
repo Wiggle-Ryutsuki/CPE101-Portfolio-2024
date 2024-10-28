@@ -145,6 +145,7 @@ div {
     max-width: 1300px;
     margin: 0 auto;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 /* Pages */
@@ -646,7 +647,8 @@ a:hover{
 
 @media screen and (max-width: 768px) {
     .content{
-        display: flex;
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center items in column layout */
     }
 
     .desktop-header {
