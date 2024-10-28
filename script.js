@@ -7,16 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const isDarkMode = themeToggle.checked; // Check if the checkbox is checked
         document.body.classList.toggle('dark-theme', isDarkMode);
         document.body.classList.toggle('light-theme', !isDarkMode);
-
+    
         // Save the current theme in localStorage
         localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
     }
-    // Event listener for checkbox change
-    themeToggle.addEventListener('change', toggleTheme);
-
-    // Load the theme when the page loads
-    document.addEventListener('DOMContentLoaded', loadTheme);
-
+    
     // Load theme from localStorage on page load
     function loadTheme() {
         const savedTheme = localStorage.getItem('theme') || 'light';
@@ -30,6 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("CHANGED TO LIGHT");
         }
     }
+    
+    // Event listener for checkbox change
+    themeToggle.addEventListener('change', toggleTheme);
+    
+    // Load the theme when the page loads
+    document.addEventListener('DOMContentLoaded', loadTheme);
 
     // Scroll to section
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
