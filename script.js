@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
     });
+    
     toggleMenu();
     function toggleMenu() {
         const dropdownMenu = document.getElementById("dropdownMenu");
