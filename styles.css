@@ -110,7 +110,7 @@ body {
 }
 
 h1 {
-    font-size: clamp(1.5rem, 3vw + 1rem, 2.8rem); /* Adapts between 2rem and 6rem based on viewport width */
+    font-size: 45px;
     margin-top: 0;
     padding-top: 0;
 }
@@ -485,7 +485,7 @@ nav ul li:not(:first-child){
 }
 
 .timeline-content p{
-    font-size: clamp(0.9rem, 1.6vw + 0.5rem, 1.063rem);
+    font-size: 17px;
 }
 
 /* Skills Section */
@@ -679,5 +679,11 @@ a:hover{
     /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px; /* Further adjust heading size for very small screens */
     }
 }
