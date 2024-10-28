@@ -233,6 +233,17 @@ nav ul li:not(:first-child){
     margin-left: 20px;
 }
 
+.menu-container{
+    padding: 0;
+    margin: 0;
+}
+
+.menu-container button{
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
 .dropdown-menu {
     display: none;
     position: absolute;
