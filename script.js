@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('change', toggleTheme);
     loadTheme();
 
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll('div[id]');
     const navLinks = document.querySelectorAll('nav a');
 
     window.addEventListener('scroll', () => {

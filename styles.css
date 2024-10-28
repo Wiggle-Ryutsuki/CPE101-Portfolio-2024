@@ -335,6 +335,10 @@ nav a {
     
 }
 
+nav a.active {
+    color: var(--accent-color); /* Use your preferred highlight color */
+}
+
 nav a:hover {
     color: var(--accent-color);
 }
