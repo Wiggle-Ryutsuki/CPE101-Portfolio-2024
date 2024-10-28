@@ -645,57 +645,59 @@ a:hover{
 }
 
 
-@media screen and (max-width: 768px) {
-    .content{
-        display: flex;
-    }
-
-    .desktop-header {
-        display: none; 
-    }
-
-    .mobile-header {
-        display: block; 
-    }
-
-    /* Timeline stuff */
-    .timeline::after {
-        left: 30px;
-    }
-
-    .timeline-container.left,
-    .timeline-container.right {
-        width: 100%;
-        left: 0;
-        text-align: left;
-        padding-left: 60px;
-    }
-
-    .left::after, .right::after {
-        left: 27px;
-    }
-        
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: 0%;
-    }
-
-    /* Skills section */
+/* Media Queries */
+@media (max-width: 768px) {
     .container {
-        display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Stack elements on small screens */
         align-items: center;
     }
 
-    /* Adjust each skill bar to stretch across the container */
-    .single-skill {
-        width: 100%; /* Or another value to create desired spacing */
-        margin-bottom: 10px;
+    .container > div {
+        margin: 10px 0; /* Adjust margin for stacked layout */
+        max-width: 100%; /* Allow full width */
     }
 
+    h1 {
+        font-size: 36px; /* Adjust heading size */
+    }
+
+    #landing .content .container {
+        flex-direction: column; /* Stack elements on small screens */
+    }
+
+    #landing .content .container > div {
+        margin-bottom: 20px; /* Space between stacked elements */
+    }
+
+    #about .content .container {
+        flex-direction: column; /* Stack elements on small screens */
+    }
+
+    #about .content .container > div {
+        margin-bottom: 20px; /* Space between stacked elements */
+    }
+
+    button {
+        width: 100%; /* Full width buttons on small screens */
+        margin: 10px 0; /* Space between buttons */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Space between nav items */
+    }
+
+    /* Adjust titles font size */
+    .titles {
+        font-size: 12px; /* Decrease title font size */
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     h1 {
         font-size: 28px; /* Further adjust heading size for very small screens */
     }
