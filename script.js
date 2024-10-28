@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to switch theme
     function toggleTheme() {
         const isDarkMode = themeToggle.checked;
-
+    
         // Toggle between dark and light theme
         if (isDarkMode) {
             document.body.classList.remove('light-theme');
@@ -147,11 +147,11 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('theme', 'light');
         }
     }
-
+    
     // Load theme from localStorage on page load
     function loadTheme() {
         const savedTheme = localStorage.getItem('theme') || 'light';
-
+    
         // Set checkbox state based on the theme
         themeToggle.checked = savedTheme === 'dark';
         
@@ -159,11 +159,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.remove('light-theme', 'dark-theme');
         document.body.classList.add(`${savedTheme}-theme`);
     }
-
+    
     // Event listener for checkbox change
     themeToggle.addEventListener('change', toggleTheme);
-
+    
     // Load the theme when the page loads
     document.addEventListener('DOMContentLoaded', loadTheme);
+    
 
 });
