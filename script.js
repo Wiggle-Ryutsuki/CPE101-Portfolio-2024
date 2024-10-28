@@ -163,8 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    const fadeInElements = document.querySelectorAll('.fade-in');
-    const fadeInLeftElements = document.querySelectorAll('.fade-in-left');
+    // Select all elements with the different animation classes
+    const animationElements = document.querySelectorAll('.fade-in, .pop-in, .fade-left');
 
     const observerOptions = {
         threshold: 0.1 // Trigger when 10% of the element is in view
@@ -173,16 +173,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in-visible');
-                observer.unobserve(entry.target); // Stop observing after the first load
+                // Check for the specific effect class and add the corresponding visible class
+                if (entry.target.classList.contains('fade-in')) {
+                    entry.target.classList.add('fade-in-visible');
+                } else if (entry.target.classList.contains('pop-in')) {
+                    entry.target.classList.add('pop-in-visible');
+                } else if (entry.target.classList.contains('fade-left')) {
+                    entry.target.classList.add('fade-left-visible');
+                }
+                
+                // Stop observing after the animation is triggered
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    fadeInElements.forEach(element => {
+    // Observe each element with any animation class
+    animationElements.forEach(element => {
         observer.observe(element);
     });
-
 
 
 });
