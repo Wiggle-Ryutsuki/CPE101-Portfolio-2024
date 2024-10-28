@@ -695,7 +695,7 @@ a:hover{
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     h1 {
         font-size: 28px; /* Further adjust heading size for very small screens */
     }
