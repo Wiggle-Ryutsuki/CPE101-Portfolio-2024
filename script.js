@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const menuButton = document.getElementById("menuButton");
-    const dropdownMenu = document.getElementById("dropdownMenu");
 
     // Toggle dropdown on menu button click
     menuButton.addEventListener("click", () => {
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close the dropdown if clicked outside
     window.addEventListener("click", (e) => {
         if (!e.target.closest("#menuButton") && !e.target.closest("#dropdownMenu")) {
-            dropdownMenu.classList.remove("show");
+            document.getElementById("dropdownMenu").classList.remove("show");
         }
     });
 
