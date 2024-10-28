@@ -121,7 +121,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background);
-    color: var(--Text-light);
+    color: var(--text);
     cursor: default;
 }
 
@@ -133,7 +133,7 @@ body {
     display: inline-block;
     text-align: center;
     background-color: var(--accent-color-sec);
-    color: var(--Text-light-sec); /* EDIT IT NEEDED*/
+    color: var(--text-sec); /* EDIT IT NEEDED*/
     padding: 4px 12px; 
     border-radius: 50px; 
     font-size: 14px;
@@ -580,7 +580,7 @@ nav ul li:not(:first-child){
 }
 
 .wrap-icons svg {
-    color: var(--Text-light)
+    color: var(--text)
 }
 
 .wrap-icon-con {
@@ -596,7 +596,7 @@ nav ul li:not(:first-child){
 
 .wrap-icon-con svg {
     cursor: pointer; 
-    color: var(--Text-light);
+    color: var(--text);
     margin-left: 10px;
     transition: 0.3s;
 }
