@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('change', toggleTheme);
     
     // Load the theme when the page loads
-    document.addEventListener('DOMContentLoaded', loadTheme);
+    loadTheme();
 
     // Scroll to section
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
