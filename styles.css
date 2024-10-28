@@ -123,9 +123,10 @@ div {
 
 .container {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
     justify-content: space-between;
-    margin: 20px;
-
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .container > div {
