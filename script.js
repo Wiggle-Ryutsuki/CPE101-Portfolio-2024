@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Select all elements with the different animation classes
-    const animationElements = document.querySelectorAll('.fade-in, .pop-in, .fade-left');
+    const animationElements = document.querySelectorAll('.fade-in, .pop-in, .fade-left, .fade-right');
 
     const observerOptions = {
         threshold: 0.1 // Trigger when 10% of the element is in view
@@ -180,6 +180,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     entry.target.classList.add('pop-in-visible');
                 } else if (entry.target.classList.contains('fade-left')) {
                     entry.target.classList.add('fade-left-visible');
+                } else if (entry.target.classList.contains('fade-left')) {
+                    entry.target.classList.add('fade-right-visible');
                 }
                 
                 // Stop observing after the animation is triggered
