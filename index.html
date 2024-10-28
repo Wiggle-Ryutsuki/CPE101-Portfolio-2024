@@ -34,13 +34,17 @@
             <div class="content">
                 <ul>
                     <li><a href="#landing">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <span class="separator"></span>
-                    <li><button>Change Theme</button></li>
+                    <li class="menu-toggle"><button onclick="toggleMenu()">Menu</button></li>
                 </ul>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><button>Change Theme</button></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
