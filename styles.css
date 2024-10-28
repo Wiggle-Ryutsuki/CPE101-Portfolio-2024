@@ -603,6 +603,9 @@ a:hover{
 
 
 @media screen and (max-width: 768px) {
+    .content {
+        max-width: 100%;
+    }
 
     /* Timeline stuff */
     .timeline::after {
