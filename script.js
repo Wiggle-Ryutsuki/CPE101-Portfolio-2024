@@ -29,6 +29,36 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('change', toggleTheme);
     loadTheme();
 
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        const headerOffset = header.offsetHeight;
+
+        // Add 'scrolled' class to header if window is scrolled
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        // Loop through each section to check which is in view
+        sections.forEach((section, index) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            
+            // Check if the section is in view with a small offset
+            if (sectionTop <= headerOffset + 50 && sectionTop + section.offsetHeight > headerOffset + 50) {
+                // Remove 'active' from all nav links
+                navLinks.forEach(link => link.classList.remove('active'));
+
+                // Add 'active' to the current link
+                navLinks[index].classList.add('active');
+            }
+        });
+    });
+
+
     // Scroll to section
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
