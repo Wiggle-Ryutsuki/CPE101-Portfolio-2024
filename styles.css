@@ -247,6 +247,7 @@ nav ul li:not(:first-child){
     color: var(--Header-text-light);
     text-align: center;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .menu-container svg{
