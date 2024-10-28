@@ -648,6 +648,7 @@ a:hover{
     .content{
         display: flex;
     }
+    
     .desktop-header {
         display: none; 
     }
