@@ -251,10 +251,6 @@ nav ul li:not(:first-child){
     text-align: left;
 }
 
-.dropdown-menu a:hover {
-    background-color: #ddd;
-}
-
 .show {
     display: block;
 }
