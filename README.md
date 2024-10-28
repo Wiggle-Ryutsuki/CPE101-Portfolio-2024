@@ -2,6 +2,8 @@
 
 ## Assignment: Personal Website Portfolio
 
+### LINK: [Wiggle-Ryutsuki.github.io](Wiggle-Ryutsuki.github.io)
+
 ### Objective
 
 Create a personal portfolio website that highlights yourself, your skills, and education. The website should be developed using HTML and CSS, with additional interactive functionality introduced through JavaScript.
