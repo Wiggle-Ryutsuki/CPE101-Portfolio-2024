@@ -614,7 +614,6 @@ a:hover{
 
     .skill-container.left{
         width: 100%;
-        max-width: 400px; /* Optional: limit width for a better look on smaller screens */
     }
 
 }
