@@ -233,13 +233,13 @@ header {
 header.scrolled {
     background-color: var(--background);
     border-bottom: 1px solid rgba(197, 197, 197, 0.5); 
-    box-shadow: 0px 15.213px 30px 0px var(--Header-text-light-hover); 
+    box-shadow: 0px 15.213px 30px 0px var(--header-text-hover); 
 }
 
 .separator {
     height: 24px; 
     width: 2px;
-    background-color: var(--Header-text-light-hover); /*EDIT IF NEEDED*/
+    background-color: var(--header-text-hover); /*EDIT IF NEEDED*/
     margin-left: 20px;
 }
 
@@ -268,7 +268,7 @@ button {
 nav a {
     display: block;
     text-decoration: none;
-    color: var(--Header-text-light);
+    color: var(--header-text);
     text-align: center;
     align-items: center;
     transition: 0.2s ease-in-out;
@@ -298,7 +298,7 @@ nav ul li:not(:first-child){
     border: none;
     padding: 10px 20px;
     background: none;    /*EDIT IF NEEDED*/
-    color: var(--Header-text-light);
+    color: var(--header-text);
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
@@ -505,7 +505,7 @@ nav ul li:not(:first-child){
 .timeline-content {
     padding: 20px;
     border-radius: 6px;
-    box-shadow: 0 2px 4px var(--Header-text-light-hover);
+    box-shadow: 0 2px 4px var(--header-text-hover);
     position: relative;
     z-index: 2;
 }
@@ -530,7 +530,7 @@ nav ul li:not(:first-child){
 .myProgress {
     width: 100%;
     background-color: var(--accent-color-sec);
-    border: 3px solid var(--Header-text-light-hover);
+    border: 3px solid var(--header-text-hover);
     border-radius: 10px;
     overflow: hidden;
     height: 10px;
@@ -678,7 +678,7 @@ a:hover{
 
 #footer .container p {
     margin: 0; 
-    color: var(--Header-text-light-hover); 
+    color: var(--header-text-hover); 
 }
 
 
