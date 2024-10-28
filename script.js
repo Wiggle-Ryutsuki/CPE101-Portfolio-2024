@@ -29,39 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('change', toggleTheme);
     loadTheme();
 
-
-    const sections = document.querySelectorAll('div[id]');
-    const navLinks = document.querySelectorAll('.desktop-header a');
-    const header = document.querySelector('.desktop-header');
-    const headerOffset = header.offsetHeight;
-
-    window.addEventListener('scroll', () => {
-        let currentSectionId = null;
-
-        // Loop through each section to check if it's in view
-        sections.forEach((section, index) => {
-            const sectionTop = section.getBoundingClientRect().top + window.scrollY;
-            const sectionBottom = sectionTop + section.offsetHeight;
-
-            // Check if section is in view with the header offset
-            if (window.scrollY >= sectionTop - headerOffset && window.scrollY < sectionBottom - headerOffset) {
-                currentSectionId = section.id;
-            }
-        });
-
-        // Update active link based on the current section in view
-        navLinks.forEach(link => {
-            if (link.getAttribute('href').substring(1) === currentSectionId) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
-        });
-    });
-
-    
-
-
     // Scroll to section
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
