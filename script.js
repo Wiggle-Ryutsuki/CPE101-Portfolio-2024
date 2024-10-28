@@ -163,7 +163,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    const fadeInElements = document.querySelectorAll('.fade-in');
 
+    const observerOptions = {
+        threshold: 0.1 // Trigger when 10% of the element is in view
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-visible');
+                observer.unobserve(entry.target); // Stop observing after the first load
+            }
+        });
+    }, observerOptions);
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
 
 
     
