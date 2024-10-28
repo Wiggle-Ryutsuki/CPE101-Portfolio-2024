@@ -243,7 +243,8 @@ nav ul li:not(:first-child){
 .menu-container button{
     border: none;
     padding: 10px 20px;
-    color: none; /*EDIT IF NEEDED*/
+    background: none;    /*EDIT IF NEEDED*/
+    color: var(--Accent-color-light);
     text-align: center;
     cursor: pointer;
 }
